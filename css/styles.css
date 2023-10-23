@@ -707,6 +707,9 @@ progress {
   .container {
     max-width: 540px;
   }
+  .titulo {
+    font-size: 2px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -716,6 +719,7 @@ progress {
   .container {
     max-width: 720px;
   }
+ 
 }
 
 @media (min-width: 992px) {
@@ -1033,7 +1037,7 @@ progress {
     flex: 0 0 auto;
     width: 8.33333333%;
   }
-
+ 
   .col-sm-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
@@ -3769,6 +3773,10 @@ fieldset:disabled .btn {
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
+  }
+
+  .titulo {
+    font-size:1px;
   }
 
   .dropdown-menu-sm-start[data-bs-popper] {
