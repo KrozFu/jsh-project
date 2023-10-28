@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,6 +15,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="./js/contenedorQR.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -27,7 +43,8 @@
             <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu<i class="fas fa-bars ms-1"></i>
+                Menu
+                <i class="fas fa-bars ms-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
@@ -38,13 +55,13 @@
                         <a class="nav-link" href="#portfolio">Huertas Amigas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Información</a>
+                        <a class="nav-link" href="#about">Acerca de</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contactos</a>
+                        <a class="nav-link" href="#contact">Contanctos</a>
                     </li>
                 </ul>
             </div>
@@ -55,42 +72,70 @@
         <div class="container">
             <div class="masthead-heading text-uppercase">Jovenes Sembrando Huertas</div>
             <!-- <div class="masthead-heading">It's Nice To Meet You</div> -->
-            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Conoce más</a>
+            <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
         </div>
     </header>
     <!-- Services-->
     <section class="page-section" id="quienessomos">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">¿Quienes somos?</h2>
+                <h2 class="section-heading text-uppercase">¿Quienes Somos?</h2>
+
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span
                         class="fa-stack fa-4x"><!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                                                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
+                                                                                                                                                                                                                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
                     </span>
                     <!--<h4 class="my-3">E-Commerce</h4>
-                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                                                                                                                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
                 </div>
                 <div class="col-md-4">
                     <img src="assets/logo.png" alt="">
-                    <p class="text-muted">Somos una propuesta organizativa de procesos agroecológicos
-                        asociados en el proyecto de extensión solidaria</p>
-
+                    <p class="text-muted">
+                        Somos una propuesta organizativa de procesos agroecológicos
+                        asociados en el proyecto de extensión solidaria
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <span
                         class="fa-stack fa-4x"><!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                                                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
+                                                                                                                                                                                                                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
                     </span>
                     <!--<h4 class="my-3">Web Security</h4>
-                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                                                                        -->
+                                                                                                                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                                                                                                                                                        -->
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="carousel-inner"><!--Aqui se muestran las imagenes--></div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="container">
+
+        <h1 style="background-color: transparent; color: rgba(228, 136, 15, 0.596);">Codigo QR Huertas amigas</h1>
+        <div class="contenedor">
+            <div id="contenedorQR" class="contenedorQR"></div>
+        </div>
+
+    </section>
+
+
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
@@ -167,138 +212,361 @@
                         </div>
                     </div>
                 </div>
-
-
-                <!-- Sembrando vida en la unal
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/mural.webp" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Sembrando vida en la Unal</div>
-                            <div class="portfolio-caption-subheading text-muted">Ilustración</div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- <div class="col-lg-4 col-sm-6">
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Window</div>
-                            <div class="portfolio-caption-subheading text-muted">Photography</div>
-                        </div>
-                    </div>
-                </div> -->
-
-
             </div>
         </div>
     </section>
-    <!-- About-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Información</h2>
+
+    <section class="foto">
+        <img src="./assets/img/presentacion.jpg" alt="" id="presentacion">
+    </section>
+
+    <section class="page-section bg-light">
+        <div class="container" style="width: 100%; align-items: center; text-align: center; ">
+            <h1>¿Por qué y para qué estamos aqui?</h1>
+            <div class="row" style="justify-content: space-around;">
+                <div class="card" style="width: 40rem;">
+                    <img src="./assets/img/jornadas/imagen_card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-style: italic; font-size: 1.4rem; text-align: justify; ">
+                            Este espacio ha sido creado con el fin de enseñarle a todos los ciudadanos del mundo sobre
+                            el
+                            trabajo que hemos estado llevando a cabo desde la Universidad Nacional de Colombia sede
+                            Manizales
+                            en junta de los diferentes colectivos agroecológicos y de resistencia ambiental que hay en
+                            la ciudad
+                            y sus alrededores.
+                            Es un placer mostrarles por medio de imágenes propias esta hermosa labor que hemos sembrado
+                            todos los aquí presentes, dirigido a ustedes los próximos quienes darán una continuidad
+                            ojala
+                            infinita a la construcción social y ambiental en nuestros territorios.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 40rem; height: auto;">
+                    <video width="auto" height="auto" controls>
+                        <source src="./assets/videos/primer_video.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/mural.webp"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4 class="subheading">Sembrando vida en la Unal</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
 
-                                La propuesta para la creación de las Huertas UNAL, se creó con el objetivo de fortalecer
-                                las
-                                iniciativas agroecológicas del proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad”
-                                en articulación
-                                con las formas de organización de trabajo en la Residencia Rómulo German Carvalho
-                                Universidad Nacional
-                                de Colombia- Sede Manizales. Por esta razón, fue indispensable contar con la
-                                participación y el interés
-                                de los residentes en los alojamientos y demás estudiantes foráneos de Antioquia, Caldas,
-                                Nariño,
-                                Putumayo, Amazonas y otros lugares, quienes inicialmente conformaron el semillero
-                                “Sembrando Vida en
-                                la UNAL” buscamos crear espacios de siembra y compartir de saberes.
+            <h1>Experiencias compartidas</h1>
+            <section class="page-section bg-light" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 1-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Jornada uno</div>
+                                    <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 1-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Jornada dos</div>
+                                    <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                                </div>
+                            </div>
+                        </div>
 
-                            </p>
-                        </div>
                     </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>March 2011</h4>
-                            <h4 class="subheading">An Agency is Born</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>December 2015</h4>
-                            <h4 class="subheading">Transition to Full Service</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg"
-                            alt="..." /></div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>July 2020</h4>
-                            <h4 class="subheading">Phase Two Expansion</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
-                                voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero
-                                unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>
-                            Be Part
-                            <br />
-                            Of Our
-                            <br />
-                            Story!
-                        </h4>
-                    </div>
-                </li>
-            </ul>
+                </div>
+            </section>
+
+
+
+
         </div>
     </section>
-    <!-- Team-->
+
+    <!--Informacion dentro de las jornadas-->
+    <div class="portfolio-modal modal fade" id="jornada_1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h1>Minga</h1>
+                                <h3>Re tejiendo San José</h3>
+                                <h3>Horizonte de sentido general del módulo</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de
+                                        Manizales con los participantes del diplomado en “Agroecología Urbana” y la
+                                        fundación Comantiva.
+                                    </li>
+                                </ul>
+                                <h3>Caminos ( objetivos específicos de cada actividad)</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en la
+                                        Casa de Cultura de San José.
+                                    </li>
+                                    <li>
+                                        Involucrar a los participantes del Diplomadoen “Agroecología Urbana” en las
+                                        actividades de la minga dirigida por la Fundación Comunativa de San José.
+                                    </li>
+                                    <li>
+                                        Reparar el tejido social en la comuna de San José involucrando la red de
+                                        agroecología y permacultura.
+                                    </li>
+                                </ul>
+                                <h3>Horizonte de sentido general del módulo
+                                </h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de
+                                        Manizales con los participantes del diplomado en “Agroecología Urbana” y la
+                                        fundación Comunativa.
+                                    </li>
+                                </ul>
+                                <h3>Caminos ( objetivos específicos de cada actividad)</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en la
+                                        Casa de Cultura de San José.
+                                    </li>
+                                    <li>
+                                        Involucrar a los participantes del Diplomado en “Agroecología Urbana” en las
+                                        actividades de la minga dirigida por la Fundación Comunativa de San José.
+                                    </li>
+                                    <li>
+                                        Reparar el tejido social en la comuna de San José involucrando la red de
+                                        agroecología y permacultura.
+                                    </li>
+                                </ul>
+
+                                <div id="carouselExampleIndicators1" class="carousel slide">
+                                    <div id="carouselInner1" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <h3>Re tejiendo San José</h3>
+                                <p style="text-align: left;">
+                                    Se reconoció el territorio de trabajo en el sector San José de la ciudad de
+                                    Manizales,
+                                    donde esta ubicada la fundación Comunativa, seguido a esto se hizo inicio a la Minga
+                                    y se
+                                    conformaron las tulpas, según las habilidades de los participantes y las
+                                    expectativas que
+                                    será guiado por un guardián
+                                </p>
+                                <ol style="text-align: left;">
+                                    <li>
+                                        Tulpa del APU: Bioconstrucción.
+                                    </li>
+                                    <li>
+                                        Tulpa Bodegas: Administración.
+                                    </li>
+                                    <li>
+                                        Tulpa Comida: Gastronomía
+                                    </li>
+                                    <li>
+                                        Tulpa Huertas: Trabajo con la tierra.
+                                    </li>
+                                    <li>
+                                        Tulpa niños y niñas: Pedagogías
+                                    </li>
+                                </ol>
+
+                                <div id="carouselExampleIndicators2" class="carousel slide">
+                                    <div id="carouselInner2" class="carousel-inner" style="width: 100%;">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="jornada_2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h1>Minga</h1>
+                                <h3>Re tejiendo San José</h3>
+                                <h3>Horizonte de sentido general del módulo</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de
+                                        Manizales con los participantes del diplomado en “Agroecología Urbana” y la
+                                        fundación Comantiva.
+                                    </li>
+                                </ul>
+                                <h3>Caminos ( objetivos específicos de cada actividad)</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en la
+                                        Casa de Cultura de San José.
+                                    </li>
+                                    <li>
+                                        Involucrar a los participantes del Diplomadoen “Agroecología Urbana” en las
+                                        actividades de la minga dirigida por la Fundación Comunativa de San José.
+                                    </li>
+                                    <li>
+                                        Reparar el tejido social en la comuna de San José involucrando la red de
+                                        agroecología y permacultura.
+                                    </li>
+                                </ul>
+                                <h3>Horizonte de sentido general del módulo
+                                </h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de
+                                        Manizales con los participantes del diplomado en “Agroecología Urbana” y la
+                                        fundación Comunativa.
+                                    </li>
+                                </ul>
+                                <h3>Caminos ( objetivos específicos de cada actividad)</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en la
+                                        Casa de Cultura de San José.
+                                    </li>
+                                    <li>
+                                        Involucrar a los participantes del Diplomado en “Agroecología Urbana” en las
+                                        actividades de la minga dirigida por la Fundación Comunativa de San José.
+                                    </li>
+                                    <li>
+                                        Reparar el tejido social en la comuna de San José involucrando la red de
+                                        agroecología y permacultura.
+                                    </li>
+                                </ul>
+
+                                <div id="carouselExampleIndicators3" class="carousel slide">
+                                    <div id="carouselInner3" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <h3>Re tejiendo San José</h3>
+                                <p style="text-align: left;">
+                                    Se reconoció el territorio de trabajo en el sector San José de la ciudad de
+                                    Manizales,
+                                    donde esta ubicada la fundación Comunativa, seguido a esto se hizo inicio a la Minga
+                                    y se
+                                    conformaron las tulpas, según las habilidades de los participantes y las
+                                    expectativas que
+                                    será guiado por un guardián
+                                </p>
+                                <ol style="text-align: left;">
+                                    <li>
+                                        Tulpa del APU: Bioconstrucción.
+                                    </li>
+                                    <li>
+                                        Tulpa Bodegas: Administración.
+                                    </li>
+                                    <li>
+                                        Tulpa Comida: Gastronomía
+                                    </li>
+                                    <li>
+                                        Tulpa Huertas: Trabajo con la tierra.
+                                    </li>
+                                    <li>
+                                        Tulpa niños y niñas: Pedagogías
+                                    </li>
+                                </ol>
+
+                                <div id="carouselExampleIndicators4" class="carousel slide">
+                                    <div id="carouselInner4" class="carousel-inner" style="width: 100%;">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section class="page-section bg-light" id="team">
         <div class="container">
             <div class="text-center">
@@ -314,15 +582,7 @@
                             Sede Manizales. Realizó su práctica comunitaria en Bienestar Universitario con la propuesta
                             para la separación de residuos en las residencias y su práctica profesional impulsando el
                             proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad”</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Nathaly Tobar Twitter Profile">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Nathaly Tobar Facebook Profile">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Nathaly Tobar LinkedIn Profile">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -333,15 +593,7 @@
                             cultura del IPECAL. Parte del equipo de la corporación Emergiendo. Acompañante de procesos
                             de ciudad, entre ellos el proyecto de extensión solidaria de “Jóvenes Sembrando Huertas,
                             cosechando comunidad”</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Daniela Giraldo Twitter Profile">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Daniela Giraldo Facebook Profile">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Daniela Giraldo LinkedIn Profile">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -355,17 +607,7 @@
                             Desde el pensamiento ambiental en las acciones colectivas biogeo agroecológicas, se
                             desempeña como estudiante en des-aprendizajes en las diversas áreas como la agricultura
                             urbana, la permacultura y el diseño comunal.</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Gilsand Quintero Twitter Profile">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Gilsand Quintero Facebook Profile">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Gilsand Quintero LinkedIn Profile">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -377,42 +619,12 @@
                             lectura espacial y ambiental de la ciudad y el campo. Participó del movimiento
                             agrícola citadino Naksi espacios vivos. Psicólogo de profesión y actúa en el
                             campo de la psicología social-comunitaria.</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Santiago Castrillon Twitter Profile">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Santiago Castrillon Facebook Profile">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!"
-                            aria-label="Santiago Castrillon LinkedIn Profile">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Clients-->
-    <!--<div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo"/></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo"/></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo"/></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo"/></a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
@@ -511,7 +723,9 @@
                     <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
                     <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                 </div>
+
             </div>
+
         </div>
     </footer>
     <!-- Portfolio Modals-->
@@ -535,15 +749,15 @@
                                     pedagógicas creadas en comunidad, con organizaciones, grupos y colectivxs.
                                 </p>
                                 <!-- <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Huerta comunitaria comunativa
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Ilustración
-                                    </li>
-                                </ul> -->
+                                                                                                                                                                                    <li>
+                                                                                                                                                                                        <strong>Client:</strong>
+                                                                                                                                                                                        Huerta comunitaria comunativa
+                                                                                                                                                                                    </li>
+                                                                                                                                                                                    <li>
+                                                                                                                                                                                        <strong>Category:</strong>
+                                                                                                                                                                                        Ilustración
+                                                                                                                                                                                    </li>
+                                                                                                                                                                                </ul> -->
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -578,15 +792,15 @@
                                     co-habitados para la producción agrícola de base familiar, comunitaria y
                                     campesina.</p>
                                 <!-- <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Explore
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Graphic Design
-                                    </li>
-                                </ul> -->
+                                                                                                                                                                                    <li>
+                                                                                                                                                                                        <strong>Client:</strong>
+                                                                                                                                                                                        Explore
+                                                                                                                                                                                    </li>
+                                                                                                                                                                                    <li>
+                                                                                                                                                                                        <strong>Category:</strong>
+                                                                                                                                                                                        Graphic Design
+                                                                                                                                                                                    </li>
+                                                                                                                                                                                </ul> -->
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -614,15 +828,15 @@
                                 <img class="img-fluid d-block mx-auto" src="assets/ecsoledad.webp" alt="..." />
                                 <p>Aqui va la decripcion</p>
                                 <!--<ul class="list-inline">
-                                                                                                            <li>
-                                                                                                                <strong>Client:</strong>
-                                                                                                                Finish
-                                                                                                            </li>
-                                                                                                            <li>
-                                                                                                                <strong>Category:</strong>
-                                                                                                                Identity
-                                                                                                            </li>
-                                                                                                        </ul>-->
+                                                                                                                                                                                                                                                            <li>
+                                                                                                                                                                                                                                                                <strong>Client:</strong>
+                                                                                                                                                                                                                                                                Finish
+                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                            <li>
+                                                                                                                                                                                                                                                                <strong>Category:</strong>
+                                                                                                                                                                                                                                                                Identity
+                                                                                                                                                                                                                                                            </li>
+                                                                                                                                                                                                                                                        </ul>-->
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -650,15 +864,15 @@
                                 <img class="img-fluid d-block mx-auto" src="assets/alfonsina.jpg" alt="..." />
                                 <p>Aqui va la descripcion</p>
                                 <!-- <ul class="list-inline">
-                                    <li>
-                                        <strong>Client:</strong>
-                                        Lines
-                                    </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Branding
-                                    </li>
-                                </ul> -->
+                                                                                                                                                                                    <li>
+                                                                                                                                                                                        <strong>Client:</strong>
+                                                                                                                                                                                        Lines
+                                                                                                                                                                                    </li>
+                                                                                                                                                                                    <li>
+                                                                                                                                                                                        <strong>Category:</strong>
+                                                                                                                                                                                        Branding
+                                                                                                                                                                                    </li>
+                                                                                                                                                                                </ul> -->
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -762,8 +976,12 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
+    <script src="https://apis.google.com/js/api.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"> </script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
 </body>
 
 </html>
