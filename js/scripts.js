@@ -3,7 +3,7 @@
 window.addEventListener('DOMContentLoaded', event => { // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (! navbarCollapsible) {
+        if (!navbarCollapsible) {
             return;
         }
         if (window.scrollY === 0) {
@@ -62,7 +62,7 @@ function crearCarrusel(idCarousel, idCarouselInner, carpetaImagenes, imagenes) {
         carouselItem.appendChild(imagenElement);
         carouselInner.appendChild(carouselItem);
     });
-    
+
     let currentIndex = 0;
     let autoPlayInterval = setInterval(avanzarDiapositiva, 3000);
 
@@ -86,7 +86,7 @@ function crearCarrusel(idCarousel, idCarouselInner, carpetaImagenes, imagenes) {
 /*carousel 1 */
 const rutaCarpeta1 = 'assets/img/jornadas/jornada_1/';
 const imagenesCarrusel1 = [
-    'imagen1.jpg','imagen2.jpg','imagen3.jpg',
+    'imagen1.jpg', 'imagen2.jpg', 'imagen3.jpg',
 ];
 crearCarrusel('carouselExampleIndicators1', 'carouselInner1', rutaCarpeta1, imagenesCarrusel1);
 

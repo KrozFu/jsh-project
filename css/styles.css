@@ -705,6 +705,7 @@ progress {
   .container {
     max-width: 540px;
   }
+
   .titulo {
     font-size: 2px;
   }
@@ -717,7 +718,7 @@ progress {
   .container {
     max-width: 720px;
   }
- 
+
 }
 
 @media (min-width: 992px) {
@@ -1035,7 +1036,7 @@ progress {
     flex: 0 0 auto;
     width: 8.33333333%;
   }
- 
+
   .col-sm-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
@@ -3774,7 +3775,7 @@ fieldset:disabled .btn {
   }
 
   .titulo {
-    font-size:1px;
+    font-size: 1px;
   }
 
   .dropdown-menu-sm-start[data-bs-popper] {
@@ -13332,7 +13333,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
 }
 
-#presentacion{
+#presentacion {
   width: 70%;
   height: auto;
   border-radius: 20px;

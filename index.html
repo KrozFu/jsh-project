@@ -1,611 +1,649 @@
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <meta name="description" content=""/>
-        <meta name="author" content=""/>
-        <title>Huerta Amiga</title>
-        <link
-        rel="shortcut icon" href="assets/logo.png" class="icon">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Huerta Amiga</title>
+    <link rel="shortcut icon" href="assets/logo.png" class="icon">
 
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
-        <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-        <script defer src="./js/contenedorQR.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="./js/contenedorQR.js"></script>
 
-    </head>
+</head>
 
-    <body
-        id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <img src="assets/dibujo-3.webp" alt="" class="logo">
-                <h1 class="titulo">Huerta amiga</h1>
-                <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#quienessomos">¿Quienes somos?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Huertas amigas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Acerca de</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Equipo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-heading text-uppercase">Jovenes Sembrando Huertas</div>
-                <!-- <div class="masthead-heading">It's Nice To Meet You</div> -->
-                <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="quienessomos">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">¿Quienes somos?</h2>
-
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span
-                            class="fa-stack fa-4x"><!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                                                                                                                                                                                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
-                        </span>
-                        <!--<h4 class="my-3">E-Commerce</h4>
-                                                                                                                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
-                    </div>
-                    <div class="col-md-4">
-                        <img src="assets/logo.png" alt="">
-                        <p class="text-muted">Somos una propuesta organizativa de procesos agroecológicos
-                                                                                                                                        asociados en el proyecto de extensión solidaria</p>
-
-                    </div>
-                    <div class="col-md-4">
-                        <span
-                            class="fa-stack fa-4x"><!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
-                                                                                                                                                                                                                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
-                        </span>
-                        <!--<h4 class="my-3">Web Security</h4>
-                                                                                                                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                                                                                                                                                                        -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner" id="carousel-inner"><!--Aqui se muestran las imagenes--></div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <img src="assets/dibujo-3.webp" alt="" class="logo">
+            <h1 class="titulo">Huerta amiga</h1>
+            <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quienessomos">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Huertas amigas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-heading text-uppercase">Jovenes Sembrando Huertas</div>
+            <!-- <div class="masthead-heading">It's Nice To Meet You</div> -->
+            <!--<a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>-->
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="quienessomos">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">¿Quienes somos?</h2>
 
-        <section class="container">
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span
+                        class="fa-stack fa-4x"><!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                                                                                                                                                                                                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>-->
+                    </span>
+                    <!--<h4 class="my-3">E-Commerce</h4>
+                                                                                                                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>-->
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/logo.png" alt="">
+                    <p class="text-muted">Somos una propuesta organizativa de procesos agroecológicos
+                        asociados en el proyecto de extensión solidaria</p>
+
+                </div>
+                <div class="col-md-4">
+                    <span
+                        class="fa-stack fa-4x"><!--<i class="fas fa-circle fa-stack-2x text-primary"></i>
+                                                                                                                                                                                                                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>-->
+                    </span>
+                    <!--<h4 class="my-3">Web Security</h4>
+                                                                                                                                                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                                                                                                                                                        -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="carousel-inner"><!--Aqui se muestran las imagenes--></div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--<section class="container">
 
             <h1 style="background-color: transparent; color: rgba(228, 136, 15, 0.596);">Codigo QR Huertas amigas</h1>
             <div class="contenedor">
                 <div id="contenedorQR" class="contenedorQR"></div>
             </div>
 
-        </section>
+        </section>-->
 
 
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Huertas amigas</h2>
-                    <h3 class="section-subheading text-muted">Colaboratorio de saberes y experiencias en agroecológia.</h3>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Huertas amigas</h2>
+                <h3 class="section-subheading text-muted">Colaboratorio de saberes y experiencias en agroecológia.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/comunativa.png" alt="..." width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Huerta comunitaria comunativa</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <div
-                        class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
                                 </div>
-                                <img class="img-fluid" src="assets/comunativa.png" alt="..." width="50"/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Huerta comunitaria comunativa</div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                            </div>
+                            <img class="img-fluid" src="assets/naksi.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Espacio de vida Naksi</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/ecsoledad.webp" alt="..." />
+                        </a>
+                        <div class=" portfolio-caption">
+                            <div class="portfolio-caption-heading">
+                                Ecofinca la Soledad
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/naksi.png" alt="..."/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Espacio de vida Naksi</div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/ecsoledad.webp" alt="..."/>
-                            </a>
-                            <div class=" portfolio-caption">
-                                <div class="portfolio-caption-heading">
-                                    Ecofinca la Soledad
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/alfonsina.jpg" alt="..."/>
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finca urbana la Alfonsina</div>
-                            </div>
+                            <img class="img-fluid" src="assets/alfonsina.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Finca urbana la Alfonsina</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="foto">
-            <img src="./assets/img/presentacion.jpg" alt="" id="presentacion">
-        </section>
-       
-        <section class="page-section bg-light">
-            <div class="container" style="width: 100%; align-items: center; text-align: center; ">
-                <h1>¿Por qué y para qué estamos aqui?</h1>
-                <div class="row" style="justify-content: space-around;">
-                    <div class="card" style="width: 40rem;">
-                        <img src="./assets/img/jornadas/imagen_card.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text" style="font-style: italic; font-size: 1.4rem; text-align: justify; ">
-                                Este espacio ha sido creado con el fin de enseñarle a todos los ciudadanos del mundo sobre el 
-                                                                            trabajo que hemos estado llevando a cabo desde la Universidad Nacional de Colombia sede Manizales 
-                                                                            en junta de los diferentes colectivos agroecológicos y de resistencia ambiental que hay en la ciudad 
-                                                                            y sus alrededores.
-                                                                            Es un placer mostrarles por medio de imágenes propias esta hermosa labor que hemos sembrado 
-                                                                            todos los aquí presentes, dirigido a ustedes los próximos quienes darán una continuidad ojala 
-                                                                            infinita a la construcción social y ambiental en nuestros territorios.
-                            </p>
-                        </div>
-                    </div>
+    <section class="foto">
+        <img src="./assets/img/presentacion.jpg" alt="" id="presentacion">
+    </section>
 
-                    <div class="card" style="width: 40rem; height: auto;">
-                        <video width="auto" height="auto" controls>
-                            <source src="./assets/videos/primer_video.mp4" type="video/mp4">
-                        </video>
+    <section class="page-section bg-light">
+        <div class="container" style="width: 100%; align-items: center; text-align: center; ">
+            <h1>¿Por qué y para qué estamos aqui?</h1>
+            <div class="row" style="justify-content: space-around;">
+                <div class="card" style="width: 40rem;">
+                    <img src="./assets/img/jornadas/imagen_card.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-style: italic; font-size: 1.4rem; text-align: justify; ">
+                            Este espacio ha sido creado con el fin de enseñarle a todos los ciudadanos del mundo sobre
+                            el
+                            trabajo que hemos estado llevando a cabo desde la Universidad Nacional de Colombia sede
+                            Manizales
+                            en junta de los diferentes colectivos agroecológicos y de resistencia ambiental que hay en
+                            la ciudad
+                            y sus alrededores.
+                            Es un placer mostrarles por medio de imágenes propias esta hermosa labor que hemos sembrado
+                            todos los aquí presentes, dirigido a ustedes los próximos quienes darán una continuidad
+                            ojala
+                            infinita a la construcción social y ambiental en nuestros territorios.
+                        </p>
                     </div>
                 </div>
 
-                <h1>Experiencias compartidas</h1>
-                <section class="page-section bg-light" id="portfolio">
-                    <div class="container">
-                        <div class="row">
-                            <div
-                                class="col-lg-4 col-sm-6 mb-4">
-                                <!-- Portfolio item 1-->
-                                <div class="portfolio-item">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_1">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content">
-                                                <i class="fas fa-plus fa-3x"></i>
-                                            </div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..." width="50"/>
-                                    </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Jornada uno</div>
-                                        <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 mb-4">
-                                <!-- Portfolio item 1-->
-                                <div class="portfolio-item">
-                                    <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
-                                        <div class="portfolio-hover">
-                                            <div class="portfolio-hover-content">
-                                                <i class="fas fa-plus fa-3x"></i>
-                                            </div>
-                                        </div>
-                                        <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..." width="50"/>
-                                    </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading">Jornada dos</div>
-                                        <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                
-           
-
+                <div class="card" style="width: 40rem; height: auto;">
+                    <video width="auto" height="auto" controls>
+                        <source src="./assets/videos/primer_video.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-        </section>
 
-        <!--Informacion dentro de las jornadas-->
-        <div class="portfolio-modal modal fade" id="jornada_1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <h1>Minga</h1>
-                                    <h3>Re tejiendo San José</h3>
-                                    <h3>Horizonte de sentido general del módulo</h3>
-                                    <ul style="text-align: left;">
-                                        <li>
-                                            Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de Manizales con los participantes del diplomado en “Agroecología Urbana” y la fundación Comantiva.
-                                        </li>
-                                    </ul>
-                                    <h3>Caminos ( objetivos específicos de cada actividad)</h3>
-                                    <ul style="text-align: left;">
-                                        <li>
-                                            Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en  la Casa de Cultura de San José.
-                                        </li>
-                                        <li>
-                                            Involucrar a los participantes del Diplomadoen  “Agroecología Urbana” en las actividades de la minga dirigida por la Fundación Comunativa de San José.
-                                        </li>
-                                        <li>
-                                            Reparar el tejido social en la comuna de San José involucrando la red de agroecología y permacultura.
-                                        </li>
-                                    </ul>
-                                    <h3>Horizonte de sentido general del módulo
-                                    </h3>
-                                    <ul style="text-align: left;">
-                                        <li>
-                                            Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de Manizales con los participantes del diplomado en “Agroecología Urbana” y la fundación Comunativa.
-                                        </li>
-                                    </ul>
-                                    <h3>Caminos ( objetivos específicos de cada actividad)</h3>
-                                    <ul style="text-align: left;">
-                                        <li>
-                                            Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en  la Casa de Cultura de San José.
-                                        </li>
-                                        <li>
-                                            Involucrar a los participantes del Diplomado en  “Agroecología Urbana” en las actividades de la minga dirigida por la Fundación Comunativa de San José.
-                                        </li>
-                                        <li>
-                                            Reparar el tejido social en la comuna de San José involucrando la red de agroecología y permacultura.
-                                        </li>
-                                    </ul>
-                                    <div class="row">
-                                        <img src="./assets/img/jornadas/jornada_1/cronograma1.jpg" alt="">
-                                        <img src="./assets/img/jornadas/jornada_1/cronograma2.jpg" alt="">
-                                    </div>
-                                    <div id="carouselExampleIndicators1" class="carousel slide" >
-                                        <div id="carouselInner1" class="carousel-inner" >
-                                           <!--Aqui se muestran las imagenes-->
+            <h1>Experiencias compartidas</h1>
+            <section class="page-section bg-light" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 1-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
                                     </div>
-                                    <h3>Re tejiendo San José</h3>
-                                    <p style="text-align: left;">
-                                        Se reconoció el territorio de trabajo en el sector San José de la ciudad de Manizales, 
-                                                                                    donde esta ubicada la fundación Comunativa, seguido a esto se hizo inicio a la Minga y se 
-                                                                                    conformaron las tulpas, según las habilidades de los participantes y las expectativas que 
-                                                                                    será guiado por un guardián
-                                    </p>
-                                    <ol style="text-align: left;">
-                                        <li>
-                                            Tulpa del APU: Bioconstrucción.
-                                        </li>
-                                        <li>
-                                            Tulpa Bodegas: Administración.
-                                        </li>
-                                        <li>
-                                            Tulpa Comida: Gastronomía
-                                        </li>
-                                        <li>
-                                            Tulpa Huertas:  Trabajo con la tierra.
-                                        </li>
-                                        <li>
-                                            Tulpa niños y niñas: Pedagogías
-                                        </li>
-                                    </ol>
-                
-                                    <div id="carouselExampleIndicators2" class="carousel slide">
-                                        <div id="carouselInner2" class="carousel-inner" style="width: 100%;">
-                                           <!--Aqui se muestran las imagenes-->
+                                    <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Jornada uno</div>
+                                    <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 1-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
                                         </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
                                     </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Jornada dos</div>
+                                    <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
 
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button" >
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
+
+
+        </div>
+    </section>
+
+    <!--Informacion dentro de las jornadas-->
+    <div class="portfolio-modal modal fade" id="jornada_1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h1>Minga</h1>
+                                <h3>Re tejiendo San José</h3>
+                                <h3>Horizonte de sentido general del módulo</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de
+                                        Manizales con los participantes del diplomado en “Agroecología Urbana” y la
+                                        fundación Comantiva.
+                                    </li>
+                                </ul>
+                                <h3>Caminos ( objetivos específicos de cada actividad)</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en la
+                                        Casa de Cultura de San José.
+                                    </li>
+                                    <li>
+                                        Involucrar a los participantes del Diplomadoen “Agroecología Urbana” en las
+                                        actividades de la minga dirigida por la Fundación Comunativa de San José.
+                                    </li>
+                                    <li>
+                                        Reparar el tejido social en la comuna de San José involucrando la red de
+                                        agroecología y permacultura.
+                                    </li>
+                                </ul>
+                                <h3>Horizonte de sentido general del módulo
+                                </h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Retejer sentidos de la ciudad y los procesos agroecológicos en la ciudad de
+                                        Manizales con los participantes del diplomado en “Agroecología Urbana” y la
+                                        fundación Comunativa.
+                                    </li>
+                                </ul>
+                                <h3>Caminos ( objetivos específicos de cada actividad)</h3>
+                                <ul style="text-align: left;">
+                                    <li>
+                                        Reconocer el grupo participante del Diplomado en “Agroecología Urbana” en la
+                                        Casa de Cultura de San José.
+                                    </li>
+                                    <li>
+                                        Involucrar a los participantes del Diplomado en “Agroecología Urbana” en las
+                                        actividades de la minga dirigida por la Fundación Comunativa de San José.
+                                    </li>
+                                    <li>
+                                        Reparar el tejido social en la comuna de San José involucrando la red de
+                                        agroecología y permacultura.
+                                    </li>
+                                </ul>
+                                <div class="row">
+                                    <img src="./assets/img/jornadas/jornada_1/cronograma1.jpg" alt="">
+                                    <img src="./assets/img/jornadas/jornada_1/cronograma2.jpg" alt="">
+                                </div>
+                                <div id="carouselExampleIndicators1" class="carousel slide">
+                                    <div id="carouselInner1" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
+                                <h3>Re tejiendo San José</h3>
+                                <p style="text-align: left;">
+                                    Se reconoció el territorio de trabajo en el sector San José de la ciudad de
+                                    Manizales,
+                                    donde esta ubicada la fundación Comunativa, seguido a esto se hizo inicio a la Minga
+                                    y se
+                                    conformaron las tulpas, según las habilidades de los participantes y las
+                                    expectativas que
+                                    será guiado por un guardián
+                                </p>
+                                <ol style="text-align: left;">
+                                    <li>
+                                        Tulpa del APU: Bioconstrucción.
+                                    </li>
+                                    <li>
+                                        Tulpa Bodegas: Administración.
+                                    </li>
+                                    <li>
+                                        Tulpa Comida: Gastronomía
+                                    </li>
+                                    <li>
+                                        Tulpa Huertas: Trabajo con la tierra.
+                                    </li>
+                                    <li>
+                                        Tulpa niños y niñas: Pedagogías
+                                    </li>
+                                </ol>
+
+                                <div id="carouselExampleIndicators2" class="carousel slide">
+                                    <div id="carouselInner2" class="carousel-inner" style="width: 100%;">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="portfolio-modal modal fade" id="jornada_2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <img src="./assets/img/jornadas/jornada_2/cronograma1.jpg" alt="">
-                                        <img src="./assets/img/jornadas/jornada_2/cronograma2.jpg" alt="">
+    <div class="portfolio-modal modal fade" id="jornada_2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <img src="./assets/img/jornadas/jornada_2/cronograma1.jpg" alt="">
+                                    <img src="./assets/img/jornadas/jornada_2/cronograma2.jpg" alt="">
+                                </div>
+                                <h3>Recorrido morro Sancancio y Huerta palermo</h3>
+
+                                <div id="carouselExampleIndicators3" class="carousel slide">
+                                    <div id="carouselInner3" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
                                     </div>
-                                    <h3>Recorrido morro Sancancio y Huerta palermo</h3>
-                                    
-                                    <div id="carouselExampleIndicators3" class="carousel slide" >
-                                        <div id="carouselInner3" class="carousel-inner" >
-                                           <!--Aqui se muestran las imagenes-->
-                                        </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    <h1>Resistencias agroecologicas</h1>
-                                    <h3 style="text-align: left;">Lugar: Auditorio Jardín Botánico</h3>
-                                    <h4 style="text-align: left;">Horizonte de sentido general del módulo </h4>
-                                    <p style="text-decoration: none;">
-                                        Ofrecer elementos teóricos, conceptuales, metodológicos y técnicos para el aprendizaje en agroecología como ciencia, movimiento social y estilo de vida,  en  Manizales / Caldas  a través de las resistencias y microresistencias gestadas en la ciudad. 
-                                    </p>
-                                    <h3>Caminos</h3>
-                                    <ul>
-                                        <li style="text-align: left;">Reconocer el trabajo agroecológico en las diferentes organizaciones y apuestas de ciudad, en el espacio del Jardín Botánico Universidad de Caldas.</li>
-                                        <li style="text-align: left;">Potenciar la participación de los y las jóvenes en las diferentes organizaciones socio ambientales que se encuentran funcionando actualmente en la ciudad.</li>
-                                    </ul>
-
-
-
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
+                                <h1>Resistencias agroecologicas</h1>
+                                <h3 style="text-align: left;">Lugar: Auditorio Jardín Botánico</h3>
+                                <h4 style="text-align: left;">Horizonte de sentido general del módulo </h4>
+                                <p style="text-decoration: none;">
+                                    Ofrecer elementos teóricos, conceptuales, metodológicos y técnicos para el
+                                    aprendizaje en agroecología como ciencia, movimiento social y estilo de vida, en
+                                    Manizales / Caldas a través de las resistencias y microresistencias gestadas en la
+                                    ciudad.
+                                </p>
+                                <h3>Caminos</h3>
+                                <ul>
+                                    <li style="text-align: left;">Reconocer el trabajo agroecológico en las diferentes
+                                        organizaciones y apuestas de ciudad, en el espacio del Jardín Botánico
+                                        Universidad de Caldas.</li>
+                                    <li style="text-align: left;">Potenciar la participación de los y las jóvenes en las
+                                        diferentes organizaciones socio ambientales que se encuentran funcionando
+                                        actualmente en la ciudad.</li>
+                                </ul>
+
+
+
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Equipo</h2>
+    <section class="page-section bg-light" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Equipo</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/Nathaly.jpeg" alt="..." />
+                        <h4>NATHALY TOBAR</h4>
+                        <p class="text-muted">Administradora de empresas, egresada de la Universidad Nacional de
+                            Colombia
+                            Sede Manizales. Realizó su práctica comunitaria en Bienestar Universitario con la propuesta
+                            para la separación de residuos en las residencias y su práctica profesional impulsando el
+                            proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad”</p>
+
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto img-cuadrada" src="assets/img/perfil/Nathaly.jpeg" alt="..."/>
-                            <h4>NATHALY TOBAR</h4>
-                            <p class="text-muted">Administradora de empresas, egresada de la Universidad Nacional de
-                                                                                                                                                            Colombia
-                                                                                                                                                            Sede Manizales. Realizó su práctica comunitaria en Bienestar Universitario con la propuesta
-                                                                                                                                                            para la separación de residuos en las residencias y su práctica profesional impulsando el
-                                                                                                                                                            proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad”</p>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/Daniela.jpeg" alt="..." />
+                        <h4>DANIELA GIRALDO</h4>
+                        <p class="text-muted">Psicóloga, estudiante de antropología y de la maestría en conocimiento y
+                            cultura del IPECAL. Parte del equipo de la corporación Emergiendo. Acompañante de procesos
+                            de ciudad, entre ellos el proyecto de extensión solidaria de “Jóvenes Sembrando Huertas,
+                            cosechando comunidad”</p>
 
-                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto img-cuadrada" src="assets/img/perfil/Daniela.jpeg" alt="..."/>
-                            <h4>DANIELA GIRALDO</h4>
-                            <p class="text-muted">Psicóloga, estudiante de antropología y de la maestría en conocimiento y
-                                                                                                                                                            cultura del IPECAL. Parte del equipo de la corporación Emergiendo. Acompañante de procesos
-                                                                                                                                                            de ciudad, entre ellos el proyecto de extensión solidaria de “Jóvenes Sembrando Huertas,
-                                                                                                                                                            cosechando comunidad”</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/gilsand.jpg" alt="..." />
+                        <h4>GILSAND QUINTERO</h4>
+                        <p class="text-muted">Educador Popular en Comunativa Huertas Urbanas, desde área de siembras de
+                            vida y cultivos
+                            para el estar aquí.
 
-                        </div>
+                            Desde el pensamiento ambiental en las acciones colectivas biogeo agroecológicas, se
+                            desempeña como estudiante en des-aprendizajes en las diversas áreas como la agricultura
+                            urbana, la permacultura y el diseño comunal.</p>
+
                     </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto img-cuadrada" src="assets/img/perfil/gilsand.jpg" alt="..."/>
-                            <h4>GILSAND QUINTERO</h4>
-                            <p class="text-muted">Educador Popular en Comunativa Huertas Urbanas, desde área de siembras de
-                                                                                                                                                            vida y cultivos
-                                                                                                                                                            para el estar aquí.
-                                                                                                                                
-                                                                                                                                                            Desde el pensamiento ambiental en las acciones colectivas biogeo agroecológicas, se
-                                                                                                                                                            desempeña como estudiante en des-aprendizajes en las diversas áreas como la agricultura
-                                                                                                                                                            urbana, la permacultura y el diseño comunal.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/santiago.jpeg" alt="..." />
+                        <h4>SANTIAGO CASTRILLON</h4>
+                        <p class="text-muted">Guardián de la vida y el territorio vivo, ser humano sintiente y atento a
+                            la
+                            lectura espacial y ambiental de la ciudad y el campo. Participó del movimiento
+                            agrícola citadino Naksi espacios vivos. Psicólogo de profesión y actúa en el
+                            campo de la psicología social-comunitaria.</p>
 
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto img-cuadrada" src="assets/img/perfil/santiago.jpeg" alt="..."/>
-                            <h4>SANTIAGO CASTRILLON</h4>
-                            <p class="text-muted">Guardián de la vida y el territorio vivo, ser humano sintiente y atento a
-                                                                                                                                                            la
-                                                                                                                                                            lectura espacial y ambiental de la ciudad y el campo. Participó del movimiento
-                                                                                                                                                            agrícola citadino Naksi espacios vivos. Psicólogo de profesión y actúa en el
-                                                                                                                                                            campo de la psicología social-comunitaria.</p>
-
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Contact-->
-            <section class="page-section" id="contact"> <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Envianos tu comentario</h2>
-                    <h3 class="section-subheading colort">Los campos marcados con * son requeridos.</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN"> <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div
-                                class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Nombre *" data-sb-validations="required"/>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
-                            </div>
-                            <div
-                                class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Correo *" data-sb-validations="required,email"/>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
-                            </div>
-                            <div
-                                class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Telefono *" data-sb-validations="required"/>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">
-                                    El número telefónico es requerido.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div
-                                class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Dejanos tu mensaje *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requerido.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage"> <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Formulario Enviado!</div>
-                            To activate this form, sign up at
-                            <br/>
-                            <a href="https: //startbootstrap.com/solution/contact-forms">
-                                https://startbootstrap.com/solution/contact-forms
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"> <div class="text-center text-danger mb-3">Error al enviar el mensaje!</div>
-                    </div>
-                    <!-- Submit Button-->
-                    <div class="text-center">
-                        <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar mensaje</button>
-                    </div>
-                </form>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Envianos tu comentario</h2>
+                <h3 class="section-subheading colort">Los campos marcados con * son requeridos.</h3>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; KrozFu Comp 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Nombre *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Correo *"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">El email es requerido.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Telefono *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">
+                                El número telefónico es requerido.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Dejanos tu mensaje *"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requerido.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Formulario Enviado!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a href="https: //startbootstrap.com/solution/contact-forms">
+                            https://startbootstrap.com/solution/contact-forms
+                        </a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error al enviar el mensaje!</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center">
+                    <button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton"
+                        type="submit">Enviar mensaje</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy;Universidad Nacional</div>
+                <!--<div class="col-lg-4 my-3 my-lg-0">
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
@@ -615,263 +653,270 @@
                         <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                    </div>
-
+                    </div>-->
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
                 </div>
 
             </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div
-                                    class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Huerta comunitaria comunativa</h2>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/comunativa.png" alt="..."/>
-                                    <p class="item-intro text-muted">Comunativa Huertas Urbanas es una organización
-                                                                                                                                                                                                    colombiana fundada en el año 2012 de carácter comunitaria, socioambiental, creada
-                                                                                                                                                                                                    con el fin de promover el desarrollo de artes vivas a partir de estrategias
-                                                                                                                                                                                                    pedagógicas creadas en comunidad, con organizaciones, grupos y colectivxs.
-                                    </p>
-                                    <!-- <ul class="list-inline">
-                                                                                                                                                                                    <li>
-                                                                                                                                                                                        <strong>Client:</strong>
-                                                                                                                                                                                        Huerta comunitaria comunativa
-                                                                                                                                                                                    </li>
-                                                                                                                                                                                    <li>
-                                                                                                                                                                                        <strong>Category:</strong>
-                                                                                                                                                                                        Ilustración
-                                                                                                                                                                                    </li>
-                                                                                                                                                                                </ul> -->
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
-                                    </button>
-                                </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Huerta comunitaria comunativa</h2>
+
+                                <img class="img-fluid d-block mx-auto" src="assets/comunativa.png" alt="..." />
+                                <p class="item-intro text-muted">Comunativa Huertas Urbanas es una organización
+                                    colombiana fundada en el año 2012 de carácter comunitaria, socioambiental, creada
+                                    con el fin de promover el desarrollo de artes vivas a partir de estrategias
+                                    pedagógicas creadas en comunidad, con organizaciones, grupos y colectivxs.
+                                </p>
+                                <!-- <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Huerta comunitaria comunativa
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Ilustración
+                                    </li>
+                                </ul> -->
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div
-                                    class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Espacio de vida Naksi</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/naksi.png" alt="..."/>
-                                    <p>NÂKSÍ, palabra de origen Kumba Kimbaya que significa abeja productora
-                                                                                                                                                                                                    de miel, enjambre, colmena y minga, simboliza el flujo imparable de la vida.
-                                                                                                                                                                                                    Somos una organización popular de educación ambiental, cuyo propósito es el
-                                                                                                                                                                                                    laboreo de la tierra en espacios urbanos y periurbanos. El proceso del
-                                                                                                                                                                                                    despertar de la Memoria Quimbaya en el bioterritorio Kumanday crece en
-                                                                                                                                                                                                    espiral con el espíritu de empoderamiento de los espacios de vida
-                                                                                                                                                                                                    co-habitados para la producción agrícola de base familiar, comunitaria y
-                                                                                                                                                                                                    campesina.</p>
-                                    <!-- <ul class="list-inline">
-                                                                                                                                                                                    <li>
-                                                                                                                                                                                        <strong>Client:</strong>
-                                                                                                                                                                                        Explore
-                                                                                                                                                                                    </li>
-                                                                                                                                                                                    <li>
-                                                                                                                                                                                        <strong>Category:</strong>
-                                                                                                                                                                                        Graphic Design
-                                                                                                                                                                                    </li>
-                                                                                                                                                                                </ul> -->
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Espacio de vida Naksi</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/naksi.png" alt="..." />
+                                <p>NÂKSÍ, palabra de origen Kumba Kimbaya que significa abeja productora
+                                    de miel, enjambre, colmena y minga, simboliza el flujo imparable de la vida.
+                                    Somos una organización popular de educación ambiental, cuyo propósito es el
+                                    laboreo de la tierra en espacios urbanos y periurbanos. El proceso del
+                                    despertar de la Memoria Quimbaya en el bioterritorio Kumanday crece en
+                                    espiral con el espíritu de empoderamiento de los espacios de vida
+                                    co-habitados para la producción agrícola de base familiar, comunitaria y
+                                    campesina.</p>
+                                <!-- <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Explore
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Graphic Design
+                                    </li>
+                                    </ul> -->
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div
-                                    class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Ecofinca la Soledad</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/ecsoledad.webp" alt="..."/>
-                                    <p>Aqui va la decripcion</p>
-                                    <!--<ul class="list-inline">
-                                                                                                                                                                                                                                                            <li>
-                                                                                                                                                                                                                                                                <strong>Client:</strong>
-                                                                                                                                                                                                                                                                Finish
-                                                                                                                                                                                                                                                            </li>
-                                                                                                                                                                                                                                                            <li>
-                                                                                                                                                                                                                                                                <strong>Category:</strong>
-                                                                                                                                                                                                                                                                Identity
-                                                                                                                                                                                                                                                            </li>
-                                                                                                                                                                                                                                                        </ul>-->
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Ecofinca la Soledad</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/ecsoledad.webp" alt="..." />
+                                <p>Aqui va la decripcion</p>
+                                <!--<ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Finish
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Identity
+                                    </li>
+                                </ul>-->
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div
-                                    class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Finca urbana la Alfonsina</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/alfonsina.jpg" alt="..."/>
-                                    <p>Aqui va la descripcion</p>
-                                    <!-- <ul class="list-inline">
-                                                                                                                                                                                    <li>
-                                                                                                                                                                                        <strong>Client:</strong>
-                                                                                                                                                                                        Lines
-                                                                                                                                                                                    </li>
-                                                                                                                                                                                    <li>
-                                                                                                                                                                                        <strong>Category:</strong>
-                                                                                                                                                                                        Branding
-                                                                                                                                                                                    </li>
-                                                                                                                                                                                </ul> -->
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Finca urbana la Alfonsina</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/alfonsina.jpg" alt="..." />
+                                <p>Aqui va la descripcion</p>
+                                <!-- <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Lines
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Branding
+                                    </li>
+                                </ul> -->
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div
-                                    class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Sembrando vida en la Unal</h2>
-                                    <img class="img-fluid d-block mx-auto" src="assets/mural.webp" alt="..."/>
-                                    <p>
-                                        La propuesta para la creación de las Huertas UNAL, se creó con el objetivo de
-                                                                                                                                                                                                    fortalecer las iniciativas agroecológicas del proyecto “Jóvenes Sembrando Huertas
-                                                                                                                                                                                                    Cosechando Comunidad” en articulación con las formas de organización de trabajo en
-                                                                                                                                                                                                    la Residencia Rómulo German Carvalho Universidad Nacional de Colombia- Sede
-                                                                                                                                                                                                    Manizales. Por esta razón, fue indispensable contar con la participación y el
-                                                                                                                                                                                                    interés de los residentes en los alojamientos y demás estudiantes
-                                                                                                                                                                                                    foráneos de Antioquia, Caldas, Nariño, Putumayo, Amazonas y otros lugares, quienes
-                                                                                                                                                                                                    inicialmente conformaron el semillero “Sembrando Vida en la UNAL” buscamos crear
-                                                                                                                                                                                                    espacios de siembra y compartir de saberes.
-                                    </p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Contactanos:</strong>
-                                            jovenessembrandohuertas@gmail.com
-                                        </li>
-                                        <li>
-                                            <strong>Encuentranos en:</strong>
-                                            <a href="https://www.google.com/maps/place/Sembrando+Vida+UNAL/@5.0566292,-75.4941612,17z/data=!3m1!4b1!4m6!3m5!1s0x8e47655d856ed98d:0xe130d9bd3cbe4996!8m2!3d5.0566239!4d-75.4915863!16s%2Fg%2F11v5cbfg8y?hl=es-ES&entry=tts">Unal
-                                                                                                                                                                                                                                            Manizales</a>
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Sembrando vida en la Unal</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/mural.webp" alt="..." />
+                                <p>
+                                    La propuesta para la creación de las Huertas UNAL, se creó con el objetivo de
+                                    fortalecer las iniciativas agroecológicas del proyecto “Jóvenes Sembrando Huertas
+                                    Cosechando Comunidad” en articulación con las formas de organización de trabajo en
+                                    la Residencia Rómulo German Carvalho Universidad Nacional de Colombia- Sede
+                                    Manizales. Por esta razón, fue indispensable contar con la participación y el
+                                    interés de los residentes en los alojamientos y demás estudiantes
+                                    foráneos de Antioquia, Caldas, Nariño, Putumayo, Amazonas y otros lugares, quienes
+                                    inicialmente conformaron el semillero “Sembrando Vida en la UNAL” buscamos crear
+                                    espacios de siembra y compartir de saberes.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Contactanos:</strong>
+                                        jovenessembrandohuertas@gmail.com
+                                    </li>
+                                    <li>
+                                        <strong>Encuentranos en:</strong>
+                                        <a
+                                            href="https://www.google.com/maps/place/Sembrando+Vida+UNAL/@5.0566292,-75.4941612,17z/data=!3m1!4b1!4m6!3m5!1s0x8e47655d856ed98d:0xe130d9bd3cbe4996!8m2!3d5.0566239!4d-75.4915863!16s%2Fg%2F11v5cbfg8y?hl=es-ES&entry=tts">Unal
+                                            Manizales</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal"/></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div
-                                    class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..."/>
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                                                                                                                                                                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                                                                                                                                                                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                                                                                                                                                                                    nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Cerrar
-                                    </button>
-                                </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                    nostrum, reiciendis facere nemo!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Window
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Photography
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="https://apis.google.com/js/api.js"></script>
-        <script src="js/scripts.js"></script>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="js/scripts.js"></script>
 
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 
-    </body>
+</body>
 
 </html>
