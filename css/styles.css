@@ -12903,6 +12903,7 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
+  
 }
 
 #portfolio .portfolio-item {
@@ -13359,4 +13360,20 @@ section#contact form#contactForm :-ms-input-placeholder {
   align-items: center;
   margin: 0 auto;
   text-align: center;
+}
+
+.mapa {
+  position: relative;
+  padding-bottom: 75%; /* Ajusta este valor según sea necesario */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
