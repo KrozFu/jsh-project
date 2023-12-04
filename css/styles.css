@@ -12816,17 +12816,14 @@ header.masthead {
 }
 
 header.masthead::before {
-  content: "";
+  /*content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-header.masthead::after {
+  z-index: -1;*/
   content: "";
   position: absolute;
   top: 0;
@@ -12839,10 +12836,27 @@ header.masthead::after {
   background-position: center center;
   background-size: cover;
   opacity: 0.9;
-  z-index: -2;
+  z-index: -1;
+
 }
 
-/* header.masthead {
+header.masthead::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-image: url("/assets/huertas.jpg");*/
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -2;
+}
+/*
+  header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
