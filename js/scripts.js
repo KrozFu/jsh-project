@@ -1,3 +1,5 @@
+
+
 window.addEventListener('DOMContentLoaded', event => { // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
@@ -38,7 +40,6 @@ window.addEventListener('DOMContentLoaded', event => { // Navbar shrink function
     });
 });
 
-//funcion para agregar primer carousel
 
 // Función para crear un carrusel dinámico
 function crearCarrusel(idCarousel, idCarouselInner, carpetaImagenes, imagenes) {
@@ -83,24 +84,33 @@ function crearCarrusel(idCarousel, idCarouselInner, carpetaImagenes, imagenes) {
     });
 }
 /*carousel 1 */
+const rutaCarpeta1 = 'assets/img/jornadas/jornada_1/';
 const imagenesCarrusel1 = [
     'imagen1.jpg', 'imagen2.jpg', 'imagen3.jpg',
 ];
-const rutaCarpeta1 = 'assets/img/jornadas/jornada_1/';
 crearCarrusel('carouselExampleIndicators1', 'carouselInner1', rutaCarpeta1, imagenesCarrusel1);
 
 /* Carousel 2 */
+const rutaCarpeta2 = 'assets/img/jornadas/jornada_1/mas_img/';
 const imagenesCarrusel2 = [
     'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
     'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg',
     'img11.jpg', 'img12.jpg', 'img13.jpg', 'img14.jpg', 'img15.jpg',
     'img16.jpg', 'img17.jpg', 'img18.jpg', 'img19.jpg', 'img20.jpg',
 ];
-const rutaCarpeta2 = 'assets/img/jornadas/jornada_1/mas_img/';
 crearCarrusel('carouselExampleIndicators2', 'carouselInner2', rutaCarpeta2, imagenesCarrusel2);
 
 
 /* Carousel 3 */
-crearCarrusel('carouselExampleIndicators3', 'carouselInner3', rutaCarpeta2, imagenesCarrusel2);
-/* Carousel 4 */
-crearCarrusel('carouselExampleIndicators4', 'carouselInner4', rutaCarpeta2, imagenesCarrusel2);
+const rutaCarpeta3 = 'assets/img/jornadas/jornada_2/mas_img/';
+const imagenesCarrusel3 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
+    'img6.jpg',
+];
+crearCarrusel('carouselExampleIndicators3', 'carouselInner3', rutaCarpeta3, imagenesCarrusel3);
+
+
+
+
+
+
