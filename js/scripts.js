@@ -55,7 +55,7 @@ function crearCarrusel(idCarousel, idCarouselInner, carpetaImagenes, imagenes) {
         const imagenElement = document.createElement('img');
         imagenElement.src = carpetaImagenes + imagen;
         imagenElement.style.width = "100%";
-        imagenElement.style.height = "38rem";
+        imagenElement.style.height = "30rem";
         imagenElement.style.borderRadius = "20px";
         imagenElement.style.objectFit = "fill";
         imagenElement.classList.add('d-block', 'w-100');
