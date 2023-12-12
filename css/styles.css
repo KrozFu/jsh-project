@@ -9127,7 +9127,7 @@ fieldset:disabled .btn {
 
 .text-muted {
   --bs-text-opacity: 1;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   text-align: left;
   color: #6c757d !important;
   /*tipo de letra cursiva*/
@@ -12685,7 +12685,7 @@ p {
 
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -12892,7 +12892,7 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
-  
+
 }
 
 #portfolio .portfolio-item {
@@ -13351,7 +13351,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .mapa {
   position: relative;
-  padding-bottom: 75%; /* Ajusta este valor según sea necesario */
+  padding-bottom: 75%;
+  /* Ajusta este valor según sea necesario */
   height: 0;
   overflow: hidden;
   margin-bottom: 3rem;
