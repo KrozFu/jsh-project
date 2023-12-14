@@ -110,7 +110,49 @@ const imagenesCarrusel3 = [
 crearCarrusel('carouselExampleIndicators3', 'carouselInner3', rutaCarpeta3, imagenesCarrusel3);
 
 
+/*Para mostrar las imagenes*/
+var fs = require('fs');
 
+// Ruta a la carpeta de imágenes
+var folderPath = '/assets/img/jornadas/jornada_1/mas_img/';
 
+// Leer los nombres de archivo en la carpeta
+fs.readdir(folderPath, function(err, files) {
+    if (err) {
+        console.error('No se pudo leer la carpeta de imágenes:', err);
+        return;
+    }
 
+    // Filtrar los archivos para incluir solo los .jpg
+    var imageFiles = files.filter(function(file) {
+        return file.endsWith('.jpg');
+    });
 
+    // Llamar a la función que muestra las imágenes
+    showImages(imageFiles);
+});
+
+// Función que muestra las imágenes
+function showImages(imageFiles) {
+    // Obtener el elemento page
+    var page = document.querySelector('.page');
+  
+    // Recorrer cada archivo de imagen
+    imageFiles.forEach(function(imageFile) {
+      // Crear un elemento img
+      var img = document.createElement('img');
+  
+      // Asignar el atributo src con la ruta del archivo
+      img.src = folderPath + '/' + imageFile;
+  
+      // Añadir el elemento img al elemento page
+      page.appendChild(img);
+    });
+  
+    // Añadir un escuchador de eventos click al elemento page
+    page.addEventListener('click', function() {
+      // Cambiar el ángulo de rotación en el eje Y
+      page.style.transform = 'rotateY(180deg)';
+    });
+  }
+  
