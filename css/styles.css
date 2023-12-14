@@ -4859,6 +4859,9 @@ fieldset:disabled .btn {
 
 .card-text:last-child {
   margin-bottom: 0;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 .card-link+.card-link {
@@ -13116,7 +13119,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
-.fondo-img-titulo{
+.fondo-img-titulo {
   display: flex;
   width: 100%;
   border-radius: 20px;
@@ -13124,7 +13127,7 @@ header.masthead .masthead-heading {
   justify-content: center;
 }
 
-.fondo-img-titulo img{
+.fondo-img-titulo img {
   width: 100%;
   height: 100%;
 }
@@ -13167,7 +13170,7 @@ header.masthead .masthead-heading {
     text-align: left;
   }
 
-  
+
 }
 
 @media (min-width: 992px) {
@@ -13388,10 +13391,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
 }
 
-.logo-dos{
+.logo-dos {
   width: 15rem;
   height: 12rem;
-  
+
 }
 
 .logo-dos img {
