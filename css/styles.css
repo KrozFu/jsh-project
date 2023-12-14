@@ -4859,6 +4859,9 @@ fieldset:disabled .btn {
 
 .card-text:last-child {
   margin-bottom: 0;
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
 .card-link+.card-link {
@@ -12811,6 +12814,7 @@ p {
 
 header.masthead {
   padding-top: 10.5rem;
+  height: 42rem;
   padding-bottom: 6rem;
   color: rgba(255, 180, 0, 0.7);
   text-align: center;
@@ -12845,6 +12849,8 @@ header.masthead::after {
 }
 
 
+
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -12859,6 +12865,9 @@ header.masthead .masthead-heading {
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.header-icons{
+  margin-top: -6rem;
 }
 
 @media (min-width: 768px) {
@@ -13110,7 +13119,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
-.fondo-img-titulo{
+.fondo-img-titulo {
   display: flex;
   width: 100%;
   border-radius: 20px;
@@ -13118,7 +13127,7 @@ header.masthead .masthead-heading {
   justify-content: center;
 }
 
-.fondo-img-titulo img{
+.fondo-img-titulo img {
   width: 100%;
   height: 100%;
 }
@@ -13161,7 +13170,7 @@ header.masthead .masthead-heading {
     text-align: left;
   }
 
-  
+
 }
 
 @media (min-width: 992px) {
@@ -13382,10 +13391,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
 }
 
-.logo-dos{
+.logo-dos {
   width: 15rem;
   height: 12rem;
-  
+
 }
 
 .logo-dos img {
@@ -13403,3 +13412,35 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: inline;
 
 }
+
+.pdf-viewer {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+
+.flipbook {
+  perspective: 1000px;
+  width: 25rem;
+  height: 25rem;
+  position: relative;
+  margin: 0 auto;
+}
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flipbook:hover .page {
+  transform: rotateY(-180deg);
+}
+
