@@ -110,49 +110,30 @@ const imagenesCarrusel3 = [
 crearCarrusel('carouselExampleIndicators3', 'carouselInner3', rutaCarpeta3, imagenesCarrusel3);
 
 
-/*Para mostrar las imagenes*/
-var fs = require('fs');
+/* Carousel 4 */
+const rutaCarpeta4 = 'assets/img/jornadas/resistencias/';
+const imagenesCarrusel4 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg',
+];
+crearCarrusel('carouselExampleIndicators4', 'carouselInner4', rutaCarpeta4, imagenesCarrusel4);
 
-// Ruta a la carpeta de imágenes
-var folderPath = '/assets/img/jornadas/jornada_1/mas_img/';
+/* Carousel 5 */
+const rutaCarpeta5 = 'assets/img/jornadas/semillas/';
+const imagenesCarrusel5 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg','img5.jpg','img6.jpg',
+];
+crearCarrusel('carouselExampleIndicators5', 'carouselInner5', rutaCarpeta5, imagenesCarrusel5);
 
-// Leer los nombres de archivo en la carpeta
-fs.readdir(folderPath, function(err, files) {
-    if (err) {
-        console.error('No se pudo leer la carpeta de imágenes:', err);
-        return;
-    }
+/* Carousel 6 */
+const rutaCarpeta6 = 'assets/img/jornadas/alimentando/';
+const imagenesCarrusel6 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg',
+];
+crearCarrusel('carouselExampleIndicators6', 'carouselInner6', rutaCarpeta6, imagenesCarrusel6);
 
-    // Filtrar los archivos para incluir solo los .jpg
-    var imageFiles = files.filter(function(file) {
-        return file.endsWith('.jpg');
-    });
-
-    // Llamar a la función que muestra las imágenes
-    showImages(imageFiles);
-});
-
-// Función que muestra las imágenes
-function showImages(imageFiles) {
-    // Obtener el elemento page
-    var page = document.querySelector('.page');
-  
-    // Recorrer cada archivo de imagen
-    imageFiles.forEach(function(imageFile) {
-      // Crear un elemento img
-      var img = document.createElement('img');
-  
-      // Asignar el atributo src con la ruta del archivo
-      img.src = folderPath + '/' + imageFile;
-  
-      // Añadir el elemento img al elemento page
-      page.appendChild(img);
-    });
-  
-    // Añadir un escuchador de eventos click al elemento page
-    page.addEventListener('click', function() {
-      // Cambiar el ángulo de rotación en el eje Y
-      page.style.transform = 'rotateY(180deg)';
-    });
-  }
-  
+/* Carousel 7 */
+const rutaCarpeta7 = 'assets/img/jornadas/guarderia/';
+const imagenesCarrusel7 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg','img4.jpg','img5.jpg',
+];
+crearCarrusel('carouselExampleIndicators7', 'carouselInner7', rutaCarpeta7, imagenesCarrusel7);
