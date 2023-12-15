@@ -48,6 +48,3 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
-
-# Por el momento se esta excluyendo el archivo pdf, se debe cargar la ruta adecuada
-/books/intro.pdf
