@@ -110,7 +110,30 @@ const imagenesCarrusel3 = [
 crearCarrusel('carouselExampleIndicators3', 'carouselInner3', rutaCarpeta3, imagenesCarrusel3);
 
 
+/* Carousel 4 */
+const rutaCarpeta4 = 'assets/img/jornadas/resistencias/';
+const imagenesCarrusel4 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg',
+];
+crearCarrusel('carouselExampleIndicators4', 'carouselInner4', rutaCarpeta4, imagenesCarrusel4);
 
+/* Carousel 5 */
+const rutaCarpeta5 = 'assets/img/jornadas/semillas/';
+const imagenesCarrusel5 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg','img5.jpg','img6.jpg',
+];
+crearCarrusel('carouselExampleIndicators5', 'carouselInner5', rutaCarpeta5, imagenesCarrusel5);
 
+/* Carousel 6 */
+const rutaCarpeta6 = 'assets/img/jornadas/alimentando/';
+const imagenesCarrusel6 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg',
+];
+crearCarrusel('carouselExampleIndicators6', 'carouselInner6', rutaCarpeta6, imagenesCarrusel6);
 
-
+/* Carousel 7 */
+const rutaCarpeta7 = 'assets/img/jornadas/guarderia/';
+const imagenesCarrusel7 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg','img4.jpg','img5.jpg',
+];
+crearCarrusel('carouselExampleIndicators7', 'carouselInner7', rutaCarpeta7, imagenesCarrusel7);

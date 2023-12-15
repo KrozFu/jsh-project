@@ -20,23 +20,53 @@
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
 
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-    <script defer src="./js/contenedorQR.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <!-- Flipbook StyleSheet -->
+    <link href="/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Icons Stylesheet -->
+    <link href="/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        /* Establecer el estilo para el popup */
+        #popupContent {
+            max-width: 100%;
+            /* Ajusta este valor según el ancho máximo que desees */
+            max-height: 100vh;
+            /* Ajusta este valor según el ancho máximo que desees */
+            margin: 0 auto;
+            /* Centra el contenido horizontalmente */
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Fondo semi-transparente blanco */
+            padding: 20px;
+            /* Agrega algún relleno si es necesario */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            /* Sombra para resaltar el popup */
+            z-index: 9999;
+            /* Ajusta el valor según sea necesario para superponer otros elementos */
+            position: fixed;
+            /* Usa "fixed" en lugar de "absolute" para asegurar que se quede fijo en la pantalla */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Centra el popup en la pantalla */
+        }
+    </style>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 
 <body id="page-top">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <img src="./assets/img/logos/escudoUnal.svg" alt="" class="logo">
+            <img src="./assets/img/logos/escudoUnal.svg" class="logo">
             <h1 class="titulo">Multitudes</h1>
             <!--<a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -51,31 +81,38 @@
                         <a class="nav-link" href="#quienessomos">¿Quienes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Multitudes</a>
+                        <a class="nav-link" href="#portfolio">Multiplicidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Acerca de</a>
+                        <a class="nav-link" href="#microacontesimientos">Microacontesimientos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#team">Equipo</a>
+                        <a class="nav-link" href="#team">Cocreador@s</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="entramados.html">Entramados</a>
+                    </li> -->
+                    <li class="nav-item last-item">
                         <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
+
         </div>
     </nav>
     <!-- Masthead-->
     <header class="masthead">
-        <div class="container">
-            <div>
-                <img src="assets/dibujo-3.webp" alt="" class="logo-dos">
+        <div class="container header-icons">
+            <div class="logos-uno">
+                <div class="container header-icons">
+                    <div class="logos-uno">
+                        <img src="assets/dibujo-3.webp" alt="" class="logo-dos">
+                    </div>
+                    <div class="fondo-img-titulo">
+                        <img src="./assets/img/logos/Títuloblanco.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="fondo-img-titulo">
-                <img src="./assets/img/logos/Títuloblanco.png" alt="">
-            </div>
-
         </div>
     </header>
     <!-- Services-->
@@ -126,7 +163,7 @@
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Multitudes</h2>
+                <h2 class="section-heading text-uppercase">Multiplicidades</h2>
                 <h3 class="section-subheading text-muted">Colaboratorio de saberes y experiencias en agroecológia.</h3>
             </div>
             <div class="row">
@@ -143,7 +180,6 @@
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Huerta comunitaria comunativa</div>
-                            <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
                         </div>
                     </div>
                 </div>
@@ -160,7 +196,6 @@
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Espacio de vida Naksi</div>
-                            <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
                         </div>
                     </div>
                 </div>
@@ -199,7 +234,39 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <!-- Portfolio item 5-->
+                    <!-- Portfolio item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/dibujo-3.webp" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Sembrando vida en la UNAL</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/mural.webp" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Corporación Nodo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 7-->
                     <div class="portfolio-item">
                         <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
                             <div class="portfolio-hover">
@@ -207,10 +274,28 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/palermo/Huertas_Públicas_Urbanas.jpeg" alt="..." />
+                            <!-- <img class="img-fluid" src="assets/img/palermo/Huertas_Públicas_Urbanas.jpeg" alt="..." /> -->
+                            <img class="img-fluid" src="assets/img/palermo/icon-pa.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Palermo</div>
+                            <div class="portfolio-caption-heading">Huertas públicas urbanas de Palermo</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 8-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/naak/nodo1.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Naak Memorias del agua</div>
                         </div>
                     </div>
                 </div>
@@ -229,18 +314,14 @@
                 <div class="card" style="width: 40rem;">
                     <img src="./assets/img/jornadas/imagen_card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text" style="font-style: italic; font-size: 1.4rem; text-align: justify; ">
+                        <p class="card-text">
                             Este espacio ha sido creado con el fin de enseñarle a todos los ciudadanos del mundo sobre
-                            el
-                            trabajo que hemos estado llevando a cabo desde la Universidad Nacional de Colombia sede
-                            Manizales
-                            en junta de los diferentes colectivos agroecológicos y de resistencia ambiental que hay en
-                            la ciudad
-                            y sus alrededores.
+                            el trabajo que hemos estado llevando a cabo desde la Universidad Nacional de Colombia sede
+                            Manizales en junta de los diferentes colectivos agroecológicos y de resistencia ambiental
+                            que hay en la ciudad y sus alrededores.
                             Es un placer mostrarles por medio de imágenes propias esta hermosa labor que hemos sembrado
                             todos los aquí presentes, dirigido a ustedes los próximos quienes darán una continuidad
-                            ojala
-                            infinita a la construcción social y ambiental en nuestros territorios.
+                            ojala infinita a la construcción social y ambiental en nuestros territorios.
                         </p>
                     </div>
                 </div>
@@ -252,8 +333,8 @@
                 </div>
             </div>
 
-            <h1>Experiencias compartidas</h1>
-            <section class="page-section bg-light" id="portfolio">
+            <section class="page-section bg-light" id="microacontesimientos">
+                <h1>Microacontesimientos</h1><br>
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-sm-6 mb-4">
@@ -275,7 +356,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 mb-4">
-                            <!-- Portfolio item 1-->
+                            <!-- Portfolio item 2-->
                             <div class="portfolio-item">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
                                     <div class="portfolio-hover">
@@ -292,14 +373,96 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 3-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#resistencias">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/resistencias/img1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">RESISTENCIAS AGROECOLÓGICAS</div>
+                                    <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 4-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#huerta_casa">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/huerta_casa/img1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">TU HUERTA EN CASA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 4-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#semillas">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/semillas/img1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">SEMILLAS DE INTENCIONES</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 4-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#alimentando_suelo">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/alimentando/img1.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">ALIMENTANDO EL SUELO</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 4-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#guarderia">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/jornadas/guarderia/img2.jpg" alt="..."
+                                        width="50" />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">GUARDERÍA DE LAS PLANTAS</div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
             </section>
-
-
-
-
         </div>
     </section>
 
@@ -452,8 +615,7 @@
                                     <img src="./assets/img/jornadas/jornada_2/cronograma1.jpg" alt="">
                                     <img src="./assets/img/jornadas/jornada_2/cronograma2.jpg" alt="">
                                 </div>
-                                <h3>Recorrido morro Sancancio y Huerta palermo</h3>
-
+                                <h3>Recorrido Morro Sancancio y Huerta Palermo</h3>
                                 <div id="carouselExampleIndicators3" class="carousel slide">
                                     <div id="carouselInner3" class="carousel-inner">
                                         <!--Aqui se muestran las imagenes-->
@@ -469,26 +631,447 @@
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
-                                <h1>Resistencias agroecologicas</h1>
-                                <h3 style="text-align: left;">Lugar: Auditorio Jardín Botánico</h3>
-                                <h4 style="text-align: left;">Horizonte de sentido general del módulo </h4>
-                                <p style="text-decoration: none;">
+
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="resistencias" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+
+                                <h3><strong>Lugar: </strong> Auditorio Jardín Botánico</h3>
+                                <h4>Horizonte de sentido general del módulo </h4>
+                                <p>
                                     Ofrecer elementos teóricos, conceptuales, metodológicos y técnicos para el
                                     aprendizaje en agroecología como ciencia, movimiento social y estilo de vida, en
                                     Manizales / Caldas a través de las resistencias y microresistencias gestadas en la
                                     ciudad.
                                 </p>
-                                <h3>Caminos</h3>
-                                <ul>
-                                    <li style="text-align: left;">Reconocer el trabajo agroecológico en las diferentes
-                                        organizaciones y apuestas de ciudad, en el espacio del Jardín Botánico
-                                        Universidad de Caldas.</li>
-                                    <li style="text-align: left;">Potenciar la participación de los y las jóvenes en las
-                                        diferentes organizaciones socio ambientales que se encuentran funcionando
-                                        actualmente en la ciudad.</li>
+                                <h3><strong>Caminos</strong></h3>
+                                <ul style="text-align: start;">
+                                    <li>Reconocer el trabajo agroecológico en las diferentes organizaciones y apuestas
+                                        de ciudad, en el espacio del Jardín Botánico Universidad de Caldas.</li>
+                                    <li>Potenciar la participación de los y las jóvenes en las diferentes organizaciones
+                                        socio ambientales que se encuentran funcionando actualmente en la ciudad.</li>
+
                                 </ul>
+                                <div id="carouselExampleIndicators4" class="carousel slide">
+                                    <div id="carouselInner4" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
 
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="huerta_casa" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h1>TU HUERTA EN CASA</h1>
+                                <ol style="text-align: start;">
+                                    <li><strong>Escoger el lugar: </strong> No es necesario vivir en una casa con jardín
+                                        o tener una terraza amplia, sólo
+                                        requieres creatividad y puedes convertir algún rincón de tu hogar en un centro
+                                        de vida.
 
+                                        Es importante que elijas un sitio con buena iluminación, para ello revisa las
+                                        horas y los momentos del día que llega la luz del sol a tu espacio.
+                                    </li>
+                                    <li><strong>La maceta: </strong>
+                                        Puede ser un recipiente reciclado. En el caso del huerto vertical funcionan muy
+                                        bien las botellas plásticas, solo asegúrate de hacerle orificios en la parte de
+                                        abajo al recipiente para que favorezca el drenaje del agua con la que riegas tus
+                                        plantas.
+                                    </li>
+                                    <li><strong>El sustrato: </strong>
+                                        El suelo en el que vas a sembrar tus plantas debe estar compuesto por 50 % abono
+                                        y 50 % tierra.
+                                    </li>
+                                </ol>
+                                <h3 style="text-align: start;">Plantar</h3>
+                                <H4 style="text-align: start;">Mezcla la tierra y el sustrato en tu maceta. </H4>
+                                <P style="text-align: start;">Haz un hoyo tan profundo como el doble del tamaño de la
+                                    semilla.</P>
+                                <h3 style="text-align: start;">Frijol</h3>
+                                <p style="text-align: start;">El fruto de la planta de frijol es altamente nutritivo,
+                                    este contiene vitamina B, riboflavina, ácido fólico y otros.</p>
+                                <h4 style="text-align: start;">Siembra</h4>
+                                <ol style="text-align: start;">
+                                    <li>
+                                        A continuación planta 2-3 semillas de frijoles, coloca las semillas de tal forma
+                                        que queden dentro del orificio en la maceta y asegurate que no queden en el
+                                        fondo.
+                                    </li>
+                                    <li>
+                                        Cubre con cuidado las semillas con tierra.
+                                    </li>
+                                    <li>
+                                        Humedecer la tierra con un poco de agua o usando un spray.
+                                    </li>
+                                </ol>
+                                <h4 style="text-align: start;">Tiempo</h4>
+                                <ul style="text-align: start;">
+                                    <li>
+                                        El tiempo que tarda en germinar una planta de frijol es entre 3 y 8 días, la
+                                        planta llega a la maduración entre 45 y 75 días y se tarda en dar frutos entre
+                                        80 y 120 días.
+                                    </li>
+                                    <li>
+                                        Si una planta de frijol no ha germinado a los 8 días es posible que la misma
+                                        esté siendo atacada por hongos y se debe revisar.
+                                    </li>
+                                </ul>
+                                <h3 style="text-align: start;">Zanahoria</h3>
+                                <p style="text-align: start;">
+                                    antes de sembrar zanahoria, es conveniente trabajar el espacio de plantación, lo
+                                    ideal es que rompamos cualquier dureza del terreno.
+                                </p>
+                                <h4 style="text-align: start;">Siembra</h4>
+                                <ol style="text-align: start;">
+                                    <li>Las semillas tendrán mayor peso y más probabilidades de germinar poniéndolas a
+                                        remojar antes de sembrarlas. Lo ideal es tenerlas al menos dos horas en agua
+                                    </li>
+                                    <li>Siembre no más de dos o tres semillas por pulgada, ya que necesitan crecer en
+                                        profundidad. </li>
+                                    <li>La zanahoria demanda un espacio entre plantas de entre 10 y 15 centímetros.</li>
+                                </ol>
+                                <h4 style="text-align: start;">Tiempo</h4>
+                                <ul style="text-align: start;">
+                                    <li>La germinación de la semilla de zanahoria requiere hasta dos semanas y las
+                                        plantas pueden no emerger uniformemente</li>
+                                    <li>Las zanahorias generalmente están listas para cosecharse entre los 50 a 60 días.
+                                    </li>
+                                </ul>
+                                <h3 style="text-align: start;">Cilantro</h3>
+                                <h4 style="text-align: start;">Siembra</h4>
+                                <ul style="text-align: start;">
+                                    <li>
+                                        Para comenzar la siembra de cilantro debes escoger una maceta apropiada. Te
+                                        aconsejamos que la maceta sea lo suficientemente grande para que no tenga
+                                        problemas al crecer. Es mejor sembrarla desde el primer momento en el lugar
+                                        definitivo en lugar de en semilleros o en botellas plásticas, ya que es una
+                                        planta que no soporta bien el trasplante.
+                                    </li>
+                                    <li>
+                                        Llena la maceta con un poco de tierra, si es de drenaje rápido, mejor. En este
+                                        momento de la siembra, puedes agregar un poco de fertilizante.
+                                    </li>
+                                    <li>
+                                        Riega con un poco de agua, lo suficiente para humedecer la tierra.
+                                    </li>
+                                    <li>
+                                        Esparce las semillas sobre la tierra distribuyendo las por toda la maceta.
+                                    </li>
+                                    <li>
+                                        Cubre las semillas con una capa fina de tierra de 5 milímetros aproximadamente.
+                                        Las semillas de cilantro no deben quedar nunca a más de 1 cm de profundidad.
+                                    </li>
+                                    <li>
+                                        Es recomendable que coloques la maceta en un lugar soleado, ya que el cilantro
+                                        necesita mucha exposición solar para crecer.
+                                    </li>
+                                </ul>
+                                <h4 style="text-align: start;">Tiempo</h4>
+                                <ul style="text-align: start;">
+                                    <li>
+                                        Las primeras semillas comenzarán a germinar en unos 7 o 10 días desde la
+                                        siembra.
+                                    </li>
+                                    <p>
+                                        Puedes cosechar el culantro cuando sus tallos tengan entre 10 y 15 cm de alto.
+                                        Para que la planta siga creciendo y puedas utilizar regularmente el cilantro, es
+                                        recomendable cortar dos tercios de hoja cada semana.
+                                    </p>
+                                </ul>
+                                <h3 style="text-align: start;">Lechuga</h3>
+                                <h4 style="text-align: start;">Siembra</h4>
+                                <ul style="text-align: start;">
+                                    <li>
+                                        Haz un agujero de poco menos de 1 centímetro en el sustrato del semillero, e
+                                        introduce una semilla en él.
+                                    </li>
+                                    <li>
+                                        Después cúbrelo con la mezcla y riega.
+                                    </li>
+                                    <li>
+                                        De la misma forma, se recomienda también humedecer la mezcla antes de plantar, y
+                                        mantenerla así durante los primeros días, aunque siempre evitando
+                                        encharcamientos.
+                                    </li>
+
+                                </ul>
+                                <h4 style="text-align: start;">Tiempo</h4>
+                                <ul style="text-align: start;">
+                                    <li>
+                                        En menos de una semana deberías empezar a ver brotar las plántulas, que estarán
+                                        listas para ser trasplantadas en cuanto tengan su segundo par de hojas.
+                                    </li>
+                                </ul>
+                                <h3 style="text-align: start;">Tomate cherry</h3>
+                                <h4 style="text-align: start;">Siembra</h4>
+                                <ul style="text-align: start;">
+                                    <li>
+                                        Basta con que coloques la semilla encima y apenas la cubras con un poco de
+                                        tierra, luego deberás dar un riego suave.
+                                    </li>
+                                    <li>
+                                        Colocá la planta en medio de la maceta y tapa su base con tierra.
+                                    </li>
+                                    <li>
+                                        Riega cada dos a tres días y coloca la misma en un lugar soleado. (no
+                                        sobre-regar.)
+                                    </li>
+                                    <li>
+                                        podrás trasplantar el brote para dejarla crecer en una maceta de 20 litros con
+                                        buen drenaje.
+                                    </li>
+                                </ul>
+                                <h4 style="text-align: start;">Tiempo</h4>
+                                <ul style="text-align: start;">
+                                    <li>
+                                        A los 3 meses, tu planta comenzará a dar sus propios tomates cherry.
+                                    </li>
+                                    <h5>Tips de siembra</h5>
+                                    <li>
+                                        Riega tu planta antes que salga el sol o cuando se oculte, en la mañana temprano
+                                        o en la noche, sin abundancia, ten en cuenta que el suelo quede húmedo no tan
+                                        mojado o encharcado
+                                    </li>
+                                    <li>
+                                        Puedes integrar las plantas aromáticas y medicinales que enriquecerán la
+                                        diversidad de tu huerto y el control de plagas y enfermedades.
+                                    </li>
+                                    <li>
+                                        En lo que respecta a la fertilización y al deshierbe es absolutamente esencial
+                                        no utilizar pesticidas, herbicidas u otros productos químicos sintéticos, sino
+                                        sustituirlos por productos naturales.
+                                    </li>
+
+                                </ul>
+                                <h2>¡Diviértete!</h2>
+                                <p class="text-muted">
+                                    La Agroecología puede ser una gran manera de crear momentos de armonía en la
+                                    familia, de mantenerse en contacto con la naturaleza y relajarse.
+                                </p>
+                                <div>
+                                    <img src="/assets/img/jornadas/huerta_casa/img1.jpg" alt="">
+                                </div>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="semillas" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h1>SEMILLAS DE INTENCIONES</h1>
+                                <h3>Horizonte de sentido general del módulo</h3>
+                                <ol style="text-align: start;">
+                                    <li>
+                                        Reencuentros para fluir en un espacio de reconocimiento a colectivos,
+                                        conformando ensamblajes autónomos en una la red de participación y creatividad
+                                        colectiva.
+                                    </li>
+                                    <h3>Caminos (objetivos específicos de cada actividad)</h3>
+                                    <li>
+                                        Involucrar a los participantes del Diplomado “Agroecología Urbana” en las redes
+                                        comunitarias a partir de semilleros conformados desde los deseos, motivaciones y
+                                        capacidad de acción .
+                                    </li>
+                                    <li>
+                                        Promover el trabajo en equipo desde la asignación de tareas y actividades de
+                                        cada semillero.
+                                    </li>
+                                </ol>
+
+                                <div id="carouselExampleIndicators5" class="carousel slide">
+                                    <div id="carouselInner5" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="alimentando_suelo" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h1>ALIMENTANDO EL SUELO</h1>
+                                <h3>Horizonte de sentido general del módulo</h3>
+                                <ol style="text-align: start;">
+                                    <li>
+                                        Brindar herramientas pragmáticas, técnicas y sociales para profundizar en los
+                                        conocimientos de agroecología urbana mediante la construcción de biofábrica en
+                                        la ciudad de Manizales.
+                                    </li>
+                                    <h3>Caminos (objetivos específicos de cada actividad)</h3>
+                                    <li>
+                                        Apoyar las redes comunitarias mediante técnicas de biofábrica para favorecer las
+                                        huertas urbanas.
+                                    </li>
+                                    <li>
+                                        Promover la participación activa en el Diplomado “Agroecología Urbana” a través
+                                        de la realización del taller de biofábrica.
+                                    </li>
+                                </ol>
+                                <div>
+                                    <img src="/assets/img/jornadas/semillas/programa.jpg" alt="">
+                                </div>
+
+                                <div id="carouselExampleIndicators6" class="carousel slide">
+                                    <div id="carouselInner6" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators6" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators6" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="guarderia" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h1>GUARDERÍA DE LAS PLANTAS</h1>
+                                <h3>Horizonte de sentido general del módulo</h3>
+                                <ol style="text-align: start;">
+                                    <li>
+                                        Brindar herramientas pragmáticas, técnicas y sociales para profundizar en los
+                                        conocimientos de agroecología urbana en la ciudad de Manizales.
+                                    </li>
+                                    <h3>Caminos (objetivos específicos de cada actividad)</h3>
+                                    <li>
+                                        Apoyar las redes comunitarias mediante técnicas de una plantuladora
+                                        que favorezca las huertas urbanas.
+                                    </li>
+                                    <li>
+                                        Promover la participación activa en el Diplomado “Agroecología Urbana” a través
+                                        de la realización del taller de plantuladora.
+                                    </li>
+                                </ol>
+                                <div>
+                                    <img src="/assets/img/jornadas/guarderia/programa.jpg" alt="">
+                                </div>
+
+                                <div id="carouselExampleIndicators7" class="carousel slide">
+                                    <div id="carouselInner7" class="carousel-inner">
+                                        <!--Aqui se muestran las imagenes-->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators7" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators7" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
 
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
@@ -504,72 +1087,109 @@
     </div>
 
 
+
     <section class="page-section bg-light" id="team">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase">Equipo</h2>
+                <h2 class="section-heading text-uppercase">Cocreador@s</h2>
             </div>
             <div class="row">
+
                 <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/Nathaly.jpeg" alt="..." />
-                        <h4>NATHALY TOBAR</h4>
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Alejandra Zuluaga.jpg"
+                            alt="..." />
+                        <h4>ALEJANDRA ZULUAGA BETANCOURT</h4>
                         <p class="text-muted">
-                            Administradora de empresas, egresada de la Universidad Nacional de
-                            Colombia Sede Manizales. Realizó su práctica comunitaria en Bienestar Universitario con la
-                            propuesta
-                            para la separación de residuos en las residencias y su práctica profesional impulsando el
-                            proyecto “Jóvenes Sembrando Huertas Cosechando comunidad”
+                            Nací a los pies del gran Kumanday, por mis venas corre la sangre del río Chinchiná y la
+                            savia del sietecueros. En mi corazón, bulle el fuego del volcán y duerme monteleón.
+                            Profesional en Antropología, música comunitaria de corazón y apasionada de los procesos
+                            pedagógicos populares, creativos, colectivos y sensibles. Hago parte de Naak: Memorias del
+                            Agua del Bioterritorio Kumanday, un proyecto de educación popular en torno al cuidado de las
+                            fuentes hídricas. Pertenezco a las agrupaciones de músicas tradicionales Tambor Hembra,
+                            Shiria Ná - Espíritu de mujer y Escuela de Sikuris del Bioterritorio Kumanday.
                         </p>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/Daniela.jpeg" alt="..." />
-                        <h4>DANIELA GIRALDO</h4>
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Carlos Dávila.png"
+                            alt="..." />
+                        <h4>CARLOS EDUARDO DÁVILA BUENO</h4>
+                        <p class="text-muted"> Estudiante de Gestión Cultural y Comunicativa de la Universidad Nacional
+                            sede Manizales, perteneciente al pueblo Indígena Embera Chamí del Territorio Ancestral de
+                            San Lorenzo en Riosucio-Caldas, Participante de programas y proyectos de Educación Propia e
+                            intercultural con organizaciones indígenas del país. Perteneciente a la Red de guardianes y
+                            custodios de semillas. Músico, investigador e intérprete de instrumentos autóctonos de la
+                            región Andina, líder del semillero “Sembrando Vida” Huertas UNAL Manizales.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Daniela Giraldo  (1).png"
+                            alt="..." />
+                        <h4>DANIELA GIRALDO HERNÁNDEZ</h4>
                         <p class="text-muted">Psicóloga, estudiante de antropología y de la maestría en conocimiento y
-                            cultura del IPECAL. Parte del equipo de la corporación Emergiendo. Acompañante de procesos
-                            de ciudad, entre ellos el proyecto de extensión solidaria de “Jóvenes Sembrando Huertas,
-                            cosechando comunidad”
+                            cultura del IPECAL. Parte del equipo de la corporación Emergiendo. Integrante del tejido de
+                            educación popular y pedagogías críticas y el grupo de trabajo en educación popular y
+                            pedagogías críticas de CLACSO. Acompañante de procesos de ciudad, entre ellos el proyecto de
+                            extensión solidaria de “Jóvenes Sembrando Huertas, cosechando comunidad” y el diplomado en
+                            agroecología Urbana de la Universidad Nacional de Colombia y colectividades socio
+                            ambientales de Manizales.
                         </p>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/gilsand.jpg" alt="..." />
-                        <h4>GILSAND QUINTERO</h4>
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Diego Mauricio Muñoz.jpeg"
+                            alt="..." />
+                        <h4>DIEGO MAURICIO MUÑOZ HURTADO</h4>
+                        <p class="text-muted">Agricultor orgánico, defensor de las buenas prácticas para el cuidado de
+                            la vida y el
+                            territorio, educador popular comunitario y divulgador del conocimiento colectivo.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Gilsan Quintero.png"
+                            alt="..." />
+                        <h4>GILSAND DARÍO QUINTERO SÁNCHEZ</h4>
                         <p class="text-muted">Educador Popular en Comunativa Huertas Urbanas, desde área de siembras de
-                            vida y cultivos para el estar aquí.Desde el pensamiento ambiental en las acciones colectivas
-                            biogeo agroecológicas, se
-                            desempeña como estudiante en des-aprendizajes en las diversas áreas como la agricultura
-                            urbana, la permacultura y el diseño comunal.
+                            vida y cultivos para el estar aquí. Investigador y Documentalista en Tejido de Colectivos
+                            Unitierra Manizales Sur Occidente Colombiano. Investigador del Centro de Estudios
+                            Independientes Editorial Color Tierra. Desde el pensamiento ambiental en las acciones
+                            colectivas biogeo agroecológicas, se desempeña como estudiante en des-aprendizajes en las
+                            diversas áreas como la agricultura urbana, la permacultura y el diseño comunal. Integrante
+                            del Comité Cabildo Abierto Comunal San José y plaza de mercado donde se realizan veedurías
+                            ciudadanas y procesos pedagógicos en participación comunal, Ambientalista en el Movimiento
+                            Socioambiental Kumanday, protector de los derechos de la tierra. Comunicador Social y
+                            Periodista barrial.
                         </p>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/santiago.jpeg" alt="..." />
-                        <h4>SANTIAGO CASTRILLON</h4>
-                        <p class="text-muted">
-                            Guardián de la vida y el territorio vivo, ser humano sintiente y atento a la lectura
-                            espacial y ambiental de la ciudad y el campo. Participó del movimiento agrícola citadino
-                            Naksi espacios vivos. Psicólogo de profesión y actúa en el campo de la psicología
-                            social-comunitaria.
-                        </p>
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Gloria Andrea.jpeg"
+                            alt="..." />
+                        <h4>GLORIA ANDREA GÓMEZ ZULUAGA</h4>
+                        <p class="text-muted">Publicista y magíster en estudios culturales, con enfoque en comunicación
+                            cultural. </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+
+                <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/mariaAngelica.jpeg" alt="..." />
-                        <h4>MARÍA ANGELICA BETANCOURT GÓMEZ</h4>
-                        <p class="text-muted"> Alguna descripción
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/docente.jpeg" alt="..." />
-                        <h4>DOCENTE</h4>
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Javier Lozano.jpeg"
+                            alt="..." />
+                        <h4>JAVIER ORLANDO LOZANO ESCOBAR</h4>
                         <p class="text-muted"> Docente Universidad Nacional de Colombia Sede Manizales. Coordinador de
                             la Cátedra Indígena y Afro
                             Intercultural desde el año 2016. Antropólogo, educador popular. Cuidador y líder del proceso
@@ -582,10 +1202,12 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+
+                <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/Juan_Felipe.jpeg" alt="..." />
-                        <h4>JUAN FELIPE CASAS CHALAARCA</h4>
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Juan Felipe .jpeg"
+                            alt="..." />
+                        <h4>JUAN FELIPE CASAS CHALARCA</h4>
                         <p class="text-muted"> Estudiante de Artes Plásticas en la Universidad de Caldas. Muralista
                             empírico que cree en el arte como medio de transformación social. Apoyo trabajos colectivos
                             que pasan por talleres o encuentros comunitarios en torno a la pintura y lo que puede
@@ -593,32 +1215,86 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+
+                <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/carlos_eduardo.png" alt="..." />
-                        <h4>CARLOS EDUARDO DÁVILA BUENO</h4>
-                        <p class="text-muted"> Estudiante de Gestión Cultural y Comunicativa de la Universidad Nacional
-                            sede Manizales, perteneciente al pueblo Indígena Embera Chamí del Territorio Ancestral de
-                            San Lorenzo en Riosucio-Caldas, Participante de programas y proyectos de Educación Propia e
-                            intercultural con organizaciones indígenas del país. Perteneciente a la Red de guardianes y
-                            custodios de semillas. Músico, investigador e intérprete de instrumentos autóctonos de la
-                            región Andina, líder del semillero “Sembrando Vida” Huertas UNAL Manizales.
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Luis David Acosta.jpg"
+                            alt="..." />
+                        <h4>LUIS DAVID ACOSTA PRODRÍGUEZ</h4>
+                        <p> Integrante Corporación Nodo. Gestor, fotógrafo y realizador audiovisual.
+                            Ha trabajado ampliamente en organizaciones y procesos sociales, culturales y educativos:
+                        </p>
+                        <ul style="text-align: start;">
+                            <li>Integrante de la Fundación Visión y Gestión Ingeniería Social 2004 – 2014. Principales
+                                proyectos: Paseo de los Colonizadores a los Fundadores, Imágenes y Relatos de Manizales,
+                                Red de Jóvenes Antiminas, Vínculos con la Memoria.</li>
+                            <li>Fundador y coordinador del proyecto de fotografía y medios audiovisuales para la
+                                enseñanza-aprendizaje de prácticas de culturas de paz: Imágenes y Relatos de Manizales
+                                2006 -2016.</li>
+                            <li>Integrante Corporación Nodo 2010 – 2021. Principales proyectos: Ciudad impresa Imagen y
+                                fotografía documental, Escuela tradicional de música Tambor Hembra, Música al natural.
+                            </li>
+                            <li>Facilitador de espacios y proyectos de construcción de culturas de paz a través de
+                                medios audiovisuales con la Agencia de Cooperación Alemana GIZ. 2008 a 2014.</li>
+                            <li>Gestor y productor del Festival de Graffiti Narrativas Urbanas. 2013, 2014. Corporación
+                                Emergiendo.</li>
+                            <li>Trayectoria como colaborador y consultor de organizaciones sociales, comunitarias y
+                                culturales en Manizales y Caldas: Asociación Cimarrón - La Dorada, Corporación Suyana –
+                                Cali, Fundación Comunitaria Huellas de Vida, Ideamos Conciencia Participativa,
+                                Corporación Cazaretazos, Corporación Caonabó, Fundación FESCO, Fundación Voces de
+                                aliento en Manizales, mil200 latidos productora audiovisual - Bogotá.</li>
+                            <li>Facilitador proyecto Cinema Embera Cabildo Nuestra Señora Candelaria de la Montaña -
+                                Riosucio, Centro de Desarrollo Comunitario Versalles - 2019.</li>
+                            <li>Fotógrafo, realizador audiovisual con experiencia comunitaria en procesos de
+                                investigación-acción CEDAT Universidad de Caldas; Observatorio Psicosocial para la
+                                Gestión del Riesgo de desastres Universidad de Manizales 2018-2020.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/María Angélica.jpeg"
+                            alt="..." />
+                        <h4>MARÍA ANGELICA BETANCOURT GÓMEZ</h4>
+                        <p class="text-muted"> Gestora de la finca urbana la Alfonsina, líder de un barrio olvidado que
+                            busca a través del cuidado y la siembra resignificar el entorno dónde habita.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+
+                <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/rosa_milena.png" alt="..." />
-                        <h4>ROSA MILENA CHINDOY CHINDOY</h4>
-                        <p class="text-muted"> Estudiante de Gestión Cultural y Comunicativa de la Universidad Nacional
-                            sede Manizales, perteneciente al pueblo Indígena Kamentsá de Sibundoy- Putumayo, practicante
-                            en el proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad”
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/santiago.jpeg" alt="..." />
+                        <h4>SANTIAGO CASTRILLON</h4>
+                        <p class="text-muted">
+                            Guardián de la vida y el territorio vivo, ser humano sintiente y atento a la lectura
+                            espacial y ambiental de la ciudad y el campo. Participó del movimiento agrícola citadino
+                            Naksi espacios vivos. Psicólogo de profesión y actúa en el campo de la psicología
+                            social-comunitaria.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+
+                <div class="col-lg-6">
                     <div class="team-member">
-                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/rayen_amanda.jpg" alt="..." />
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Solanggie Nathaly.png"
+                            alt="..." />
+                        <h4>SOLANGGIE NATHALY TOBAR ROSERO</h4>
+                        <p class="text-muted">
+                            Administradora de empresas egresada de la Universidad Nacional de Colombia Sede Manizales.
+                            Realicé mi práctica comunitaria en Bienestar Universitario con una propuesta para la
+                            separación de residuos en las residencias y realicé mi práctica profesional impulsando el
+                            proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad”. Participante en el tejido desde
+                            el Jardín Botánico con el semillero de investigación “Alelopatía” y el semillero "Asuntos de
+                            Campo y Escritura Antropológica" como estudiante de la Universidad de Caldas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Rayén A.jpg" alt="..." />
                         <h4>RAYÉN AMANDA ROVIRA RUBIO</h4>
                         <p class="text-muted"> Directora del proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad “,
                             docente de gestión cultural y comunicativa de la Universidad Nacional de Colombia sede
@@ -627,23 +1303,82 @@
                         </p>
                     </div>
                 </div>
+
+                <div class="col-lg-6">
+                    <div class="team-member">
+                        <img class="mx-auto img-cuadrada" src="assets/img/perfil/nuevo-perfil/Milena Chindoy.png"
+                            alt="..." />
+                        <h4>ROSA MILENA CHINDOY CHINDOY</h4>
+                        <p class="text-muted">
+                            Estudiante de Gestión Cultural y Comunicativa de la Universidad Nacional
+                            sede Manizales, perteneciente al pueblo Indígena Kamentsá de Sibundoy- Putumayo, practicante
+                            en el proyecto “Jóvenes Sembrando Huertas Cosechando Comunidad”
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
 
+    <!-- Contenido del popup oculto -->
+    <div id="popupContent">
+        <div class="container">
+            <!-- Normal Flipbook -->
+            <div class="_df_book" source="/books/intro.pdf" id="df_manual_book"></div>
+        </div>
+    </div>
+
+    <!-- Tu código JavaScript y jQuery -->
+    <script src="/dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+    <script src="/dflip/js/dflip.min.js" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Función para abrir el popup al hacer clic en el botón
+            $("#openPopup").click(function () {
+                $("#popupContent").show();
+            });
+
+            // Función para cerrar el popup al hacer clic fuera del contenido
+            $(document).mouseup(function (e) {
+                var container = $("#popupContent");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    container.hide();
+                }
+            });
+        });
+    </script>
+
+
     <!-- Footer-->
-    <footer class="footer py-4">
+    <footer class="footer py-4" style="background-color: black; color: white;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy;Universidad Nacional</div>
+                <div class="col-lg-4 text-lg-start">
+                    <h5>Contacto</h5>
+                    <p>Correo Electrónico: <a
+                            href="mailto:jovenessembrandohuertas@gmail.com">jovenessembrandohuertas@gmail.com</a></p>
+
+                    <a href="https://www.youtube.com/@daujovenessembrando" class="text-decoration-none me-3"
+                        style="color: white;">
+                        <i class="fab fa-youtube" style="width: 2rem; height: 2rem;"></i>
+                    </a>
+                </div>
+                <div class="col-lg-4 text-lg-center">
+                    <h5>Derechos de Autor</h5>
+                    <p>&copy; Universidad Nacional</p>
+                </div>
                 <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    <h5>Enlaces</h5>
+                    <a class="link-dark text-decoration-none me-3"
+                        href="http://bienestar.manizales.unal.edu.co/">Bienestar Universitario</a>
                 </div>
             </div>
         </div>
     </footer>
+
 
 
 
@@ -673,6 +1408,20 @@
                                         allowfullscreen>
                                     </iframe>
                                 </div>
+                                <div style="text-align: start;">
+                                    <h3>Vistanos en nuestras redes sociales</h3>
+                                    <div class="d-flex align-items-center">
+                                        <a href="https://www.facebook.com/escuelapopularcomunativa.huertasurbanas?locale=es_LA"
+                                            class="text-decoration-none me-3">
+                                            <i class="fa-brands fa-facebook text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/comunativa/" class="text-decoration-none">
+                                            <i class="fa-brands fa-instagram text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                    </div>
+                                </div>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -699,15 +1448,37 @@
                                 <h2 class="text-uppercase">Espacio de vida Naksi</h2>
                                 <img class="img-fluid d-block mx-auto" src="assets/naksi.png" alt="..." />
                                 <p class="item-intro text-muted">
-                                    NÂKSÍ, palabra de origen Kumba Kimbaya que significa abeja productora
-                                    de miel, enjambre, colmena y minga, simboliza el flujo imparable de la vida.
-                                    Somos una organización popular de educación ambiental, cuyo propósito es el
-                                    laboreo de la tierra en espacios urbanos y periurbanos. El proceso del
-                                    despertar de la Memoria Quimbaya en el bioterritorio Kumanday crece en
-                                    espiral con el espíritu de empoderamiento de los espacios de vida
-                                    co-habitados para la producción agrícola de base familiar, comunitaria y
-                                    campesina.
+                                    Somos una organización popular de educación ambiental que germina con la intención
+                                    de sembrar nuestro propio alimento mediante procesos orgánicos, permitiéndonos
+                                    recuperar la fertilidad del suelo, el tejido social, la calidad paisajística, los
+                                    colores, aromas, sentires, saberes y sabores que llenan de dignidad y alegría
+                                    nuestro día a día. Esta intención es la manifestación de la identidad cultural que
+                                    viene como legado ancestral de la descendencia agrícola en el Bioterritorio Kumanday
+
+                                    La palabra |NAKSÍ| de origen Kumba-Kimbaya significa: enjambre, colmena y minga.
+                                    Simboliza el imparable flujo de energía que sostiene y expande la vida en forma de
+                                    espiral
                                 </p>
+                                <div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.229130247365!2d-75.4855178!3d5.0665736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476f0dc942b145%3A0x67b31d018256964!2sHuerta%20Comunitaria%20NAKSI%20Espacio%20de%20Vida!5e0!3m2!1ses-419!2sco!4v1702592035959!5m2!1ses-419!2sco"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div style="text-align: start;">
+                                    <h3>Vistanos en nuestras redes sociales</h3>
+                                    <div class="d-flex align-items-center">
+                                        <a href="https://www.facebook.com/profile.php?id=100074287041845&locale=es_LA"
+                                            class="text-decoration-none me-3">
+                                            <i class="fa-brands fa-facebook text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/huertanaksi/" class="text-decoration-none">
+                                            <i class="fa-brands fa-instagram text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                    </div>
+                                </div>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -732,15 +1503,34 @@
                             <div class="modal-body">
                                 <!-- Project details-->
                                 <h2 class="text-uppercase">Ecofinca la Soledad</h2>
-                                <img class="img-fluid d-block mx-auto" src="assets/ecsoledad.webp" alt="..." />
+                                <img class="img-fluid d-block mx-auto" src="assets/img/soledad/Presentación.jpg"
+                                    alt="..." />
                                 <p class="item-intro text-muted">
                                     Somos territorio agroecológico, escuela de vida y hogar de experiencias en comunidad
                                     con aprendizajes de sustentabilidad. Sembramos para nutrir el camino de las
                                     generaciones presentes y las venideras. Somos bioterritorio Kumanday.
-                                    <br><br>
-                                    Contacto: 3118108742
-                                    conscienciaorganica@gmail.com
+
                                 </p>
+                                <div>
+                                    <embed class="pdf-viewer" src="assets/pdfs/ecofinca_soledad/pdf1.pdf"
+                                        type="application/pdf">
+                                </div>
+                                <ul class="list-inline" style="text-align: start;">
+                                    <li><strong>Célular:</strong> 3118108742</li>
+                                    <li><strong>Correo electronico:</strong> conscienciaorganica@gmail.com</li>
+                                </ul>
+
+                                <div class="d-flex align-items-center">
+                                    <a href="https://www.facebook.com/Ecofincalasoledad?locale=es_LA"
+                                        class="text-decoration-none me-3">
+                                        <i class="fa-brands fa-facebook text-black"
+                                            style="width: 2rem; height: 2rem;"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/ecofincalasoledad/" class="text-decoration-none">
+                                        <i class="fa-brands fa-instagram text-black"
+                                            style="width: 2rem; height: 2rem;"></i>
+                                    </a>
+                                </div>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -771,17 +1561,35 @@
                                     cuidar y conectarse con la naturaleza en medio de lo rururbano. Trabajamos en tejido
                                     con diferentes colectivos de la ciudad.
                                     ¡Anímate a cuidar con nosotros! <br> <br>
-                                    Contactanos:
-                                    3147609842 -3217566349 - 3185966517 <br>
-                                    Correo electrónico:
-                                    fincaurbanalaalfonsina@gmail.com
                                 </p>
+
                                 <div class="mapa">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.2586644967946!2d-75.5219075!3d5.061768799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476f246b17d42f%3A0x4e278d31330b70e4!2sfinca%20urbana%20la%20alfonsina!5e0!3m2!1ses-419!2sco!4v1701733813950!5m2!1ses-419!2sco"
                                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade">
                                     </iframe>
+                                </div>
+                                <div>
+                                    <h3>Contactanos</h3>
+                                    <ul class="list-inline" style="text-align: start;">
+                                        <li><strong>Dirección:</strong> Calle 15, Manizales, Caldas</li>
+                                        <li><strong>Números de celular:</strong> 3147609842 - 3217566349 - 3185966517
+                                        </li>
+                                        <li><strong>Correo electronico:</strong> fincaurbanalaalfonsina@gmail.com</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center">
+                                        <a href="https://www.facebook.com/Finca.Urbana.La.Alfonsina?locale=es_LA"
+                                            class="text-decoration-none me-3">
+                                            <i class="fa-brands fa-facebook text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/laalfonsinafincaurbana/"
+                                            class="text-decoration-none">
+                                            <i class="fa-brands fa-instagram text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                    </div>
                                 </div>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
@@ -819,9 +1627,10 @@
                                     inicialmente conformaron el semillero “Sembrando Vida en la UNAL” buscamos crear
                                     espacios de siembra y compartir de saberes.
                                 </p>
-                                <ul class="list-inline">
+                                <h3>Contactanos</h3>
+                                <ul class="list-inline" style="text-align: start;">
                                     <li>
-                                        <strong>Contactanos:</strong>
+                                        <strong>Correo electronico:</strong>
                                         jovenessembrandohuertas@gmail.com
                                     </li>
                                     <li>
@@ -843,6 +1652,7 @@
             </div>
         </div>
     </div>
+
     <!-- Portfolio item 6 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -854,23 +1664,37 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
-                                    repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
-                                    nostrum, reiciendis facere nemo!</p>
-                                <ul class="list-inline">
+                                <h2 class="text-uppercase">Corporación Nodo</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/mural.webp" alt="..." />
+                                <p>
+                                    Somos educadores populares, hacemos redes afectivas y colaborativas, relaciones
+                                    intuitivas, accidentadas y espontáneas en los territorios - como la imaginación de
+                                    una niña o un niño- . Estos nodos- garabatos van sumándose en el camino a medida que
+                                    construimos confianza, tejiendo pacientemente puertos para volver a vernos,
+                                    apoyarnos, cooperarnos, mirarnos... resistiendo alegremente desde la educación
+                                    popular y los buenos vivires.
+                                </p>
+                                <h3>Contactanos</h3>
+                                <ul class="list-inline" style="text-align: start;">
                                     <li>
-                                        <strong>Client:</strong>
-                                        Window
+                                        <strong>Célular:</strong>
+                                        3232480715
                                     </li>
-                                    <li>
-                                        <strong>Category:</strong>
-                                        Photography
-                                    </li>
+                                    <li><strong>Correo electronico: </strong> corporacionnodomanizales@gmail.com</li>
                                 </ul>
+
+                                <div class="d-flex align-items-center">
+                                    <a href="https://www.facebook.com/profile.php?id=100057348735710&locale=es_LA"
+                                        class="text-decoration-none me-3">
+                                        <i class="fa-brands fa-facebook text-black"
+                                            style="width: 2rem; height: 2rem;"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/corporacionnodo/" class="text-decoration-none">
+                                        <i class="fa-brands fa-instagram text-black"
+                                            style="width: 2rem; height: 2rem;"></i>
+                                    </a>
+                                </div>
+
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -883,7 +1707,6 @@
             </div>
         </div>
     </div>
-
     <!-- Portfolio item 7 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -901,14 +1724,26 @@
                                 <p>Nos sembramos colectivamente, en armonía con lo que nos rodea y el amor a la vida.
                                     Sembrar vida siempre implica sanar el terreno, nutrir con agua, cuidar y confiar en
                                     el sol. Sembrar es para ver crecer, vivir, florecer y volver al ciclo.
-                                    Sembrar es abrirnos a aprender, a ser con otros y crecer juntos (Rubio, R. 2023)</p>
+                                    Sembrar es abrirnos a aprender, a ser con otros y crecer juntos (Rubio, R. 2023)
+                                </p>
+                                <p>Te esperamos todos los domingos por la mañana!</p>
+                                <div>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15897.30697623125!2d-75.49171833381946!3d5.050675862508381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4765478e6beb7d%3A0xfaf05a711353fe7b!2sParque%20Palermo!5e0!3m2!1ses-419!2sco!4v1702596973290!5m2!1ses-419!2sco"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
 
-                                <h3>Participa en las actividades de las hertas</h3>
-                                <ul style="text-align: start;">
+                                <h3>Participa en las actividades de las huertas</h3>
+                                <ul class="list-inline" style="text-align: start;">
                                     <li>Huerta Alameda</li>
                                     <li>Huerta Guadual</li>
                                 </ul>
-                                <p>Te esperamos todos los domingos por la mañana!</p>
+
+                                <h3>Contactanos</h3>
+                                <ul style="text-align: start;">
+                                    <li><strong>Célular:</strong> 3137441675</li>
+                                </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -921,13 +1756,65 @@
             </div>
         </div>
     </div>
+
+    <!-- Portfolio item 8 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Naak Memorias del agua</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/naak/nodo1.png" alt="..." />
+                                <p>
+                                    Somos una iniciativa de educación Popular para el Buen vivir que desarrolla procesos
+                                    creativos y comunitarios para articular una mirada múltiple de nuestras aguas,
+                                    alimentada por diversidad de conocimientos y voces en y desde espacios comunitarios
+                                    culturales, a través de la construcción de cartografías sobre las principales
+                                    fuentes de agua con comunidades urbano rurales, organizaciones sociales, culturales
+                                    y ambientales del territorio kumanday.
+                                </p>
+                                <h3>Contactanos</h3>
+                                <ul class="list-inline" style="text-align: start;">
+                                    <li>
+                                        <strong>Correo electronico:</strong>
+                                        3234959130
+                                    </li>
+                                    <li><strong>Correo electronico: </strong> Naakmemoriasdelagua@gmail.com</li>
+                                </ul>
+                                <div class="d-flex align-items-center">
+                                    <a href="https://www.facebook.com/profile.php?id=100083236365677"
+                                        class="text-decoration-none me-3">
+                                        <i class="fa-brands fa-facebook text-black"
+                                            style="width: 2rem; height: 2rem;"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/naak_2022/" class="text-decoration-none">
+                                        <i class="fa-brands fa-instagram text-black"
+                                            style="width: 2rem; height: 2rem;"></i>
+                                    </a>
+                                </div>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="js/scripts.js"></script>
-
-    <!--<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>-->
 
 </body>
 
