@@ -3797,6 +3797,10 @@ fieldset:disabled .btn {
   .titulo {
     display: none;
   }
+
+  .logo {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -12866,7 +12870,8 @@ header.masthead .masthead-heading {
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.header-icons{
+
+.header-icons {
   margin-top: -6rem;
 }
 
@@ -13320,10 +13325,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.logo {
-  width: 100px;
-  height: 80px;
-}
 
 .titulo {
   font-size: 2.5rem;
@@ -13379,8 +13380,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
 }
 
-
-
 .logo {
   width: 10rem;
   height: 6rem;
@@ -13426,21 +13425,27 @@ section#contact form#contactForm :-ms-input-placeholder {
   position: relative;
   margin: 0 auto;
 }
+
 .page {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: white;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   transform-style: preserve-3d;
   transition: transform 1s;
 }
+
 .page img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .flipbook:hover .page {
   transform: rotateY(-180deg);
 }
 
+.last-item {
+  margin-right: 15px;
+}
