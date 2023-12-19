@@ -10,7 +10,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-
 @font-face {
   font-family: 'Ancizar sans';
   font-weight: bold;
@@ -115,7 +114,7 @@
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: "Ancizar sans", Tahoma, Geneva, sans-serif, Tahoma, Geneva, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  --bs-body-font-size: 1rem;
+  --bs-body-font-size: 1.2rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
@@ -715,8 +714,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto; 
 }
 
 .img-thumbnail {
@@ -12910,28 +12909,11 @@ header.masthead::after {
   z-index: -2;
 }
 
-header.masthead .masthead-subheading {
-  font-size: 1.5rem;
-  font-style: italic;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-  font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-header.masthead .masthead-heading {
-  font-size: 3.25rem;
-  font-weight: 700;
-  line-height: 3.25rem;
-  margin-bottom: 2rem;
-  font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 header h1 {
   color: white;
   font-size: 4em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
 
 header h2 {
   color: #71b243;
@@ -12939,7 +12921,6 @@ header h2 {
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-
 
 .header-icons {
   margin-top: -7rem;
@@ -12951,20 +12932,12 @@ header h2 {
     padding-bottom: 12.5rem;
   }
 
-  header.masthead .masthead-subheading {
-    font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
-  }
-
   header.masthead .masthead-heading {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
-
 }
 
 #portfolio .portfolio-item {
@@ -13176,8 +13149,6 @@ header h2 {
   margin-top: 0;
   color: inherit;
 }
-
-
 
 .subheading {
   font-size: 2.5rem;
