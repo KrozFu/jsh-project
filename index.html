@@ -75,13 +75,19 @@
                 <i class="fas fa-bars ms-1"></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <div class="collapse navbar-collapse " id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto menu">
                     <li class="nav-item">
                         <a class="nav-link" href="#quienessomos">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="#portfolio">Colectivos</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Colectivos</a>
+                        <a class="nav-link" href="#presentacion">Raices</a>
+                        <ul class="submenu">
+                            <li><a href="#xqueparaque">¿Por qué estamos aqui?</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#microacontesimientos">Microacontesimientos</a>
@@ -89,9 +95,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Cocreador@s</a>
                     </li>
-                    <!-- <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="entramados.html">Entramados</a>
-                    </li> -->
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Creaciones</a>
                     </li>
@@ -99,6 +105,7 @@
                         <a class="nav-link" href="#contacto">Redes</a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -310,7 +317,7 @@
         <img src="./assets/img/presentacion.jpg" alt="" id="presentacion">
     </section>
 
-    <section class="page-section bg-light">
+    <section class="page-section bg-light" id="xqueparaque">
         <div class="container" style="width: 100%; align-items: center; text-align: center; ">
             <h1>¿Por qué y para qué estamos aqui?</h1>
             <div class="row" style="justify-content: space-around;">
@@ -339,132 +346,130 @@
     </section>
 
     <section class="page-section bg-light" id="microacontesimientos">
-        <div class="container" style="width: 100%; align-items: center; text-align: center; ">
-            <h1>Microacontesimientos</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
+        <div class="container">
+            <div class="text-center">
+                <h1 class="section-heading text-uppercase">Microacontesimientos</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
                                 </div>
-                                <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
-                                    width="50" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">JORNADA UNO</div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
-                                    width="50" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">JORNADA DOS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#resistencias">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/jornadas/resistencias/img1.jpg" alt="..."
-                                    width="50" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">RESISTENCIAS AGROECOLÓGICAS</div>
-                                <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#huerta_casa">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/jornadas/huerta_casa/img1.jpg" alt="..."
-                                    width="50" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">TU HUERTA EN CASA</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#semillas">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/jornadas/semillas/img1.jpg" alt="..."
-                                    width="50" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">SEMILLAS DE INTENCIONES</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#alimentando_suelo">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/jornadas/alimentando/img1.jpg" alt="..."
-                                    width="50" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">ALIMENTANDO EL SUELO</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#guarderia">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fas fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/jornadas/guarderia/img2.jpg" alt="..."
-                                    width="50" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">GUARDERÍA DE LAS PLANTAS</div>
-                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">JORNADA UNO</div>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
+                                width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">JORNADA DOS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#resistencias">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/resistencias/img1.jpg" alt="..."
+                                width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">RESISTENCIAS AGROECOLÓGICAS</div>
+                            <!-- <div class="portfolio-caption-subheading text-muted">Ilustración</div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#huerta_casa">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/huerta_casa/img1.jpg" alt="..."
+                                width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">TU HUERTA EN CASA</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#semillas">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/semillas/img1.jpg" alt="..." width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">SEMILLAS DE INTENCIONES</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#alimentando_suelo">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/alimentando/img1.jpg" alt="..."
+                                width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">ALIMENTANDO EL SUELO</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#guarderia">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/guarderia/img2.jpg" alt="..." width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">GUARDERÍA DE LAS PLANTAS</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
