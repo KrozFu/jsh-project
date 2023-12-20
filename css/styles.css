@@ -9194,6 +9194,8 @@ fieldset:disabled .btn {
   font-size: 1.1rem;
   text-align: left;
   color: #6c757d !important;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .colorT {
