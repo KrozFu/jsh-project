@@ -12742,14 +12742,14 @@ p {
 }
 
 .page-section {
-  padding: 1rem 0;
+  padding: 0 0;
 }
 
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
   font-size: 2rem;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .page-section h3.section-subheading,
@@ -13507,9 +13507,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 100%;
   height: auto;
   align-items: center;
-  margin: 0 auto;
   text-align: center;
+  margin-bottom: 0;
+  padding: 20px;
 }
+
 
 .mapa {
   position: relative;
@@ -13565,12 +13567,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 100%;
 }
 
-.quines-somos {
+.quienes-somos {
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   text-align: justify;
   display: inline;
   font-size: 1.2rem;
+  margin-bottom: 0; /* Agrega esta línea para eliminar el margen inferior */
 }
 
 .pdf-viewer {
@@ -13704,13 +13707,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ffc800;
 }
 
-.texto-huertas{
+.texto-huertas {
   padding: 10px;
   color: black;
-  font-size: .9rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-style: italic;
   font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-align: justify;
+  margin-bottom: 0;
 }
+
 
 .texto-huertas-titulo{
   padding: 10px;
@@ -13727,3 +13734,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
 }
+
+.class-color{
+  background-color: #96c66b;
+  padding: 30px;
+}
+
+.class-color2{
+  background-color: #b0856b;
+  margin-bottom: 0;
+}
+
+/*
+.class-color3{
+background-color: #b0856b;
+padding: 30px;
+}
+
+.class-color4{
+  background-color: #b0856b;
+  padding: 30px;
+}
+*/
