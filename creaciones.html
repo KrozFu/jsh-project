@@ -34,33 +34,21 @@
     <link href="/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
 
     <style>
-        /* Establecer el estilo para el popup */
-        #popupContent {
-            max-width: 100%;
-            /* Ajusta este valor según el ancho máximo que desees */
-            max-height: 100vh;
-            /* Ajusta este valor según el ancho máximo que desees */
-            margin: 0 auto;
-            /* Centra el contenido horizontalmente */
-            background-color: rgba(255, 255, 255, 0.9);
-            /* Fondo semi-transparente blanco */
-            padding: 20px;
-            /* Agrega algún relleno si es necesario */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            /* Sombra para resaltar el popup */
-            z-index: 9999;
-            /* Ajusta el valor según sea necesario para superponer otros elementos */
-            position: fixed;
-            /* Usa "fixed" en lugar de "absolute" para asegurar que se quede fijo en la pantalla */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-        }
-
         #mainNav {
             background-color: rgba(5, 5, 5, 0.876);
             margin-bottom: 1rem;
+        }
+
+        .submenu {
+            white-space: nowrap;
+            /* Evita el salto de línea dentro del elemento */
+        }
+
+        .submenu a {
+            display: block;
+            /* Hace que el enlace ocupe todo el ancho del contenedor */
+            padding: 5px;
+            /* Ajusta el espaciado según sea necesario */
         }
     </style>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -82,11 +70,42 @@
             </button>
 
             <div class="collapse navbar-collapse " id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Colectivos</a></li>
-                </ul>
+                <ul class="navbar-nav text-uppercase ms-auto menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#quienessomos">¿Quiénes somos?</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#portfolio">Colectivos</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="index.html#presentacion">Raices</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#xqueparaque">¿Por qué estamos aqui?</a></li>
+                        </ul>
+                    </li> -->
 
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#presentacion">Raices</a>
+                        <ul class="submenu">
+                            <li><a href="index.html#xqueparaque">¿Por qué estamos aqui?</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#microacontesimientos">Microacontesimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#team">Cocreador@s</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entramados.html">Creaciones</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a class="nav-link" href="#contacto">Redes</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -116,7 +135,8 @@
                             <img class="img-fluid" src="assets/comunativa.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading">Pensamiento ambiental y espistemologías del sur </div>
+                            <div class="portfolio-caption-heading">Pensamiento ambiental y espistemologías del sur
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -446,7 +466,8 @@
                                     <p class="entramados-class">
                                         <span><i class="fa-regular fa-file"></i></span>
                                         <a class="entramados-class"
-                                            href="https://drive.google.com/file/d/1CYLoFH5EIwKAYEyNnAHtXXjGgU3bnLBo/view?usp=drive_link">Voces sobre el territorio SIEKIKA</a>
+                                            href="https://drive.google.com/file/d/1CYLoFH5EIwKAYEyNnAHtXXjGgU3bnLBo/view?usp=drive_link">Voces
+                                            sobre el territorio SIEKIKA</a>
                                     </p>
 
                                 </div>
