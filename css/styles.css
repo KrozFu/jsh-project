@@ -13703,3 +13703,27 @@ section#contact form#contactForm :-ms-input-placeholder {
 .entramados-class a:hover{
   color: #ffc800;
 }
+
+.texto-huertas{
+  padding: 10px;
+  color: black;
+  font-size: .9rem;
+  font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-align: justify;
+}
+
+.texto-huertas-titulo{
+  padding: 10px;
+  color: black;
+  font-size: 2rem;
+  font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+}
+
+.texto-cocre{
+  padding: 10px;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+}
