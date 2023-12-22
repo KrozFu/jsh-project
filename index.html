@@ -41,14 +41,11 @@
 
         .submenu {
             white-space: nowrap;
-            /* Evita el salto de línea dentro del elemento */
         }
 
         .submenu a {
             display: block;
-            /* Hace que el enlace ocupe todo el ancho del contenedor */
             padding: 5px;
-            /* Ajusta el espaciado según sea necesario */
         }
     </style>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -120,26 +117,21 @@
             <div class="container">
                 <br><br>
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase texto-huertas-titulo">¿Quiénes somos?</h2>
+                    <h2 class="section-heading text-uppercase texto-huertas-titulo" style="font-weight: bold;">
+                        ¿Quiénes somos?
+                    </h2>
                 </div>
-
                 <div class="quienes-somos">
-                    <p class="texto-huertas">
+                    <p class="texto-huertas" style="font-weight: bold;">
                         Somos una propuesta agroecológica que emerge del proyecto de extensión solidaria: “Jóvenes
                         Sembrando Huertas Cosechando Comunidad” de la Universidad Nacional de Colombia- sede Manizales,
                         que nace y crece en red desde el grupo de investigación académica “Cognición, Lenguaje y
                         Cultura” en compañía de las siguientes alianzas y organizaciones socioambientales de la ciudad.
                     </p>
                 </div>
-
             </div>
         </div>
     </section>
-
-    <!--
-        Colores...
-        #ecc492  #526049  #96c66b  #e4e7ca  #b0856b  #7ca35c  #fbf4ee  #a2a190
-    -->
 
     <!-- Portfolio Grid-->
     <section class="page-section bg-light" id="portfolio">
@@ -159,7 +151,6 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <!-- Establecer un tamaño fijo para la imagen -->
                             <img class="img-fluid" src="assets/comunativa.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
@@ -181,7 +172,7 @@
                             <img class="img-fluid" src="assets/naksi.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">Espacio de vida Naksi</div>
+                            <div class="portfolio-caption-heading texto-huertas-titulo">Espacio de Vida Naksi</div>
                         </div>
                     </div>
                 </div>
@@ -215,7 +206,7 @@
                             <img class="img-fluid" src="assets/alfonsina.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">Finca urbana la Alfonsina
+                            <div class="portfolio-caption-heading texto-huertas-titulo">Finca Urbana la Alfonsina
                             </div>
                         </div>
                     </div>
@@ -232,7 +223,7 @@
                             <img class="img-fluid" src="assets/img/logo-unal.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">Sembrando vida en la UNAL
+                            <div class="portfolio-caption-heading texto-huertas-titulo">Sembrando Vida en la UNAL
                             </div>
                         </div>
                     </div>
@@ -266,8 +257,9 @@
                             <img class="img-fluid" src="assets/img/palermo/icon-pa.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">Huertas públicas urbanas de
-                                Palermo</div>
+                            <div class="portfolio-caption-heading texto-huertas-titulo">
+                                Huertas Públicas Urbanas de Palermo
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -288,9 +280,25 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="container">
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 8-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/ucaldas/ucaldas_logo.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading texto-huertas-titulo">Grupo de Investigación
+                                Territorialidades</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row text-center">
                     <p class="texto-huertas">
                         Este espacio es un pretexto para nuestro encuentro, vidas haciendo vidas, vidas sin miedo y
@@ -300,8 +308,8 @@
                         cuidado de la tierra y de otras formas de vida posibles.
                     </p>
                 </div>
-            </div>
 
+            </div>
         </div>
 
     </section>
@@ -393,23 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 2-->
-                    <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
-                            <div class="portfolio-hover">
-                                <div class="portfolio-hover-content">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
-                                width="50" />
-                        </a>
-                        <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">RECORRIDOS</div>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- Portfolio item 3-->
                     <div class="portfolio-item">
@@ -428,6 +420,25 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#jornada_2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..."
+                                width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading texto-huertas-titulo">RECORRIDOS</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- Portfolio item 4-->
                     <div class="portfolio-item">
@@ -1433,7 +1444,7 @@
     </div> -->
 
     <!-- Tu código JavaScript y jQuery -->
-    <script src="/dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="/dflip/js/libs/jquery.min.js" type="text/javascript"></script>
     <script src="/dflip/js/dflip.min.js" type="text/javascript"></script>
 
     <script>
@@ -1451,8 +1462,7 @@
                 }
             });
         });
-    </script>
-
+    </script> -->
 
     <!-- Footer-->
     <footer class="footer py-4" style="background-color: black;" id="contacto">
@@ -1585,11 +1595,12 @@
                                     recuperar la fertilidad del suelo, el tejido social, la calidad paisajística, los
                                     colores, aromas, sentires, saberes y sabores que llenan de dignidad y alegría
                                     nuestro día a día. Esta intención es la manifestación de la identidad cultural que
-                                    viene como legado ancestral de la descendencia agrícola en el Bioterritorio Kumanday
-
+                                    viene como legado ancestral de la descendencia agrícola en el Bioterritorio
+                                    Kumanday.
+                                    <br>
                                     La palabra |NAKSÍ| de origen Kumba-Kimbaya significa: enjambre, colmena y minga.
                                     Simboliza el imparable flujo de energía que sostiene y expande la vida en forma de
-                                    espiral
+                                    espiral.
                                 </p>
                                 <div class="mapa">
                                     <iframe width="600" height="450" style="border:0;" allowfullscreen=""
@@ -1597,7 +1608,7 @@
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                                 <div style="text-align: start;">
-                                    <h3>Vistanos en nuestras redes sociales</h3>
+                                    <h3>Contáctanos</h3>
                                     <div class="d-flex align-items-center">
                                         <a href="https://www.facebook.com/profile.php?id=100074287041845&locale=es_LA"
                                             class="text-decoration-none me-3">
@@ -1645,22 +1656,26 @@
                                     <embed class="pdf-viewer" src="assets/pdfs/ecofinca_soledad/pdf1.pdf"
                                         type="application/pdf">
                                 </div>
-                                <ul class="list-inline" style="text-align: start;">
-                                    <li><strong>Célular:</strong> 3118108742</li>
-                                    <li><strong>Correo electronico:</strong> conscienciaorganica@gmail.com</li>
-                                </ul>
-
-                                <div class="d-flex align-items-center">
-                                    <a href="https://www.facebook.com/Ecofincalasoledad?locale=es_LA"
-                                        class="text-decoration-none me-3">
-                                        <i class="fa-brands fa-facebook text-black"
-                                            style="width: 2rem; height: 2rem;"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/ecofincalasoledad/" class="text-decoration-none">
-                                        <i class="fa-brands fa-instagram text-black"
-                                            style="width: 2rem; height: 2rem;"></i>
-                                    </a>
+                                <div style="text-align: start;">
+                                    <h3>Contáctanos</h3>
+                                    <ul class="list-inline" style="text-align: start;">
+                                        <li><strong>Célular:</strong> 3118108742</li>
+                                        <li><strong>Correo electronico:</strong> conscienciaorganica@gmail.com</li>
+                                    </ul>
+                                    <div class="d-flex align-items-center">
+                                        <a href="https://www.facebook.com/Ecofincalasoledad?locale=es_LA"
+                                            class="text-decoration-none me-3">
+                                            <i class="fa-brands fa-facebook text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/ecofincalasoledad/"
+                                            class="text-decoration-none">
+                                            <i class="fa-brands fa-instagram text-black"
+                                                style="width: 2rem; height: 2rem;"></i>
+                                        </a>
+                                    </div>
                                 </div>
+
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>
@@ -1701,7 +1716,7 @@
                                     </iframe>
                                 </div>
                                 <div>
-                                    <h3>Contactanos</h3>
+                                    <h3>Contáctanos</h3>
                                     <ul class="list-inline" style="text-align: start;">
                                         <li><strong>Dirección:</strong> Calle 15, Manizales, Caldas</li>
                                         <li><strong>Números de celular:</strong> 3147609842 - 3217566349 - 3185966517
@@ -1805,7 +1820,7 @@
                                     apoyarnos, cooperarnos, mirarnos... resistiendo alegremente desde la educación
                                     popular y los buenos vivires.
                                 </p>
-                                <h3>Contactanos</h3>
+                                <h3>Contáctanos</h3>
                                 <ul class="list-inline" style="text-align: start;">
                                     <li>
                                         <strong>Célular:</strong>
@@ -1838,6 +1853,7 @@
             </div>
         </div>
     </div>
+
     <!-- Portfolio item 7 modal popup-->
     <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -1871,7 +1887,7 @@
                                     <li>Huerta Guadual</li>
                                 </ul>
 
-                                <h3>Contactanos</h3>
+                                <h3>Contáctanos</h3>
                                 <ul style="text-align: start;">
                                     <li><strong>Célular:</strong> 3137441675</li>
                                 </ul>
@@ -1899,7 +1915,7 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Naak Memorias del agua</h2>
+                                <h2 class="text-uppercase">Naak Memorias del Agua</h2>
                                 <img class="img-fluid d-block mx-auto" src="assets/img/naak/memoria-agua.png"
                                     alt="..." />
                                 <p class="texto-huertas">
@@ -1910,7 +1926,7 @@
                                     fuentes de agua con comunidades urbano rurales, organizaciones sociales, culturales
                                     y ambientales del territorio kumanday.
                                 </p>
-                                <h3>Contactanos</h3>
+                                <h3>Contáctanos</h3>
                                 <ul class="list-inline" style="text-align: start;">
                                     <li>
                                         <strong>Correo electronico:</strong>
@@ -1929,6 +1945,50 @@
                                             style="width: 2rem; height: 2rem;"></i>
                                     </a>
                                 </div>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Cerrar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio item 9 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Grupo de Investigación Territorialidades</h2>
+                                <img class="img-fluid d-block mx-auto" src="assets/img/ucaldas/ucaldas_logo.png"
+                                    alt="..." />
+                                <p class="texto-huertas">
+                                    En el proyecto “Jóvenes sembrando huertas cosechando comunidad” se desarrolló un
+                                    trabajo colaborativo con el grupo de Investigación Territorialidades-ICSH (Instituto
+                                    de Investigaciones en Ciencias Sociales y Humanas) de la Universidad de Caldas, y
+                                    los educadores e investigadores populares de la Fundación Comunativa, tejiendo
+                                    sentidos y vivencias con los niños, niñas de San José y demás participantes del
+                                    espacio en Comunativa Huertas Urbanas.
+                                </p>
+                                <h3>Contáctanos</h3>
+                                <ul class="list-inline" style="text-align: start;">
+                                    <li>
+                                        <strong>Proyecto:</strong>
+                                        <a href="https://iicsh.co/diseno-autonomo-territorial/">
+                                            Diseño Autónomo y laboratorios de futurización territorial
+                                        </a>
+                                    </li>
+                                </ul>
                                 <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
                                     type="button">
                                     <i class="fas fa-xmark me-1"></i>

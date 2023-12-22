@@ -6222,10 +6222,9 @@ fieldset:disabled .btn {
 }
 
 .modal-body p {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 300;
   color: #000;
-  font-style: italic;
 }
 
 .modal-footer {
@@ -13018,18 +13017,15 @@ header h2 {
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
-  font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Ancizar sans", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   margin-bottom: 0;
 }
 
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
   font-style: italic;
-  font-family: "Ancizar serif", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Ancizar sans", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-
-
 
 #microacontesimientos .portfolio-item {
   /* max-width: 26rem; */
@@ -13709,7 +13705,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 .texto-huertas {
   padding: 10px;
   color: black;
-  font-weight: bold;
   font-size: 1.2rem;
   font-family: "Ancizar sans", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-align: justify;
@@ -13721,7 +13716,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: black;
   font-size: 2rem;
   font-family: "Ancizar sans", "MS Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
 }
 
 .texto-cocre {
@@ -13741,15 +13735,3 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-color: #b0856b;
   margin-bottom: 0;
 }
-
-/*
-.class-color3{
-background-color: #b0856b;
-padding: 30px;
-}
-
-.class-color4{
-  background-color: #b0856b;
-  padding: 30px;
-}
-*/
