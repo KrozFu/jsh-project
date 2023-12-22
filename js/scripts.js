@@ -122,16 +122,34 @@ const imagenesCarrusel5 = [
 ];
 crearCarrusel('carouselExampleIndicators5', 'carouselInner5', rutaCarpeta5, imagenesCarrusel5);
 
+
 /* Carousel 6 */
 const rutaCarpeta6 = 'assets/img/jornadas/alimentando/';
 const imagenesCarrusel6 = [
-    'img1.jpg', 'img2.jpg', 'img3.jpg',
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpeg', 'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpeg', 'img10.jpeg', 'img11.jpeg', 'img12.jpg', 'img13.jpg', 'img14.jpg', 'img15.jpg', 'img16.jpg', 'img17.jpg', 'img18.jpg'
 ];
 crearCarrusel('carouselExampleIndicators6', 'carouselInner6', rutaCarpeta6, imagenesCarrusel6);
 
+
 /* Carousel 7 */
-const rutaCarpeta7 = 'assets/img/jornadas/guarderia/';
+const rutaCarpeta7 = 'assets/img/jornadas/tegiendo_saberes/';
 const imagenesCarrusel7 = [
-    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
+    'portada.jpg, img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg'
 ];
 crearCarrusel('carouselExampleIndicators7', 'carouselInner7', rutaCarpeta7, imagenesCarrusel7);
+
+
+/* Carousel 8 */
+const rutaCarpeta8 = 'assets/img/jornadas/naksi/';
+const imagenesCarrusel8 = [
+    'img1.jpg', 'img2.JPG', 'img3.jpg', 'img4.JPG', 'img5.JPG', 'img6.JPG', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg', 'portada.jpg'
+];
+crearCarrusel('carouselExampleIndicators8', 'carouselInner8', rutaCarpeta8, imagenesCarrusel8);
+
+
+/* Carousel 8 */
+const rutaCarpeta9 = 'assets/img/jornadas/unal/';
+const imagenesCarrusel9 = [
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg', 'img11.JPG'
+];
+crearCarrusel('carouselExampleIndicators9', 'carouselInner9', rutaCarpeta9, imagenesCarrusel9);
