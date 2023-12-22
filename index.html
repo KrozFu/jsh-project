@@ -34,27 +34,21 @@
     <link href="/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
 
     <style>
-        /* Establecer el estilo para el popup */
-        #popupContent {
-            max-width: 100%;
-            /* Ajusta este valor según el ancho máximo que desees */
-            max-height: 100vh;
-            /* Ajusta este valor según el ancho máximo que desees */
-            margin: 0 auto;
-            /* Centra el contenido horizontalmente */
-            background-color: rgba(255, 255, 255, 0.9);
-            /* Fondo semi-transparente blanco */
-            padding: 20px;
-            /* Agrega algún relleno si es necesario */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            /* Sombra para resaltar el popup */
-            z-index: 9999;
-            /* Ajusta el valor según sea necesario para superponer otros elementos */
-            position: fixed;
-            /* Usa "fixed" en lugar de "absolute" para asegurar que se quede fijo en la pantalla */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        #mainNav {
+            background-color: rgba(5, 5, 5, 0.876);
+            margin-bottom: 1rem;
+        }
+
+        .submenu {
+            white-space: nowrap;
+            /* Evita el salto de línea dentro del elemento */
+        }
+
+        .submenu a {
+            display: block;
+            /* Hace que el enlace ocupe todo el ancho del contenedor */
+            padding: 5px;
+            /* Ajusta el espaciado según sea necesario */
         }
     </style>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -64,14 +58,10 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <!-- <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
-            <!-- <img src="./assets/img/logos/escudoUnal.svg" class="logo"> -->
-
             <a class="logo" href="#page-top"><img src="./assets/img/logos/Títuloblanco.png"></a>
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
+                Menú
                 <i class="fas fa-bars ms-1"></i>
             </button>
 
@@ -79,33 +69,29 @@
                 <ul class="navbar-nav text-uppercase ms-auto menu">
                     <li class="nav-item">
                         <a class="nav-link" href="#quienessomos">¿Quiénes somos?</a>
-                        <ul class="submenu">
+                        <ul class="submenu" style="margin-top: 10px;">
                             <li><a href="#portfolio">Colectivos</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#presentacion">Raices</a>
-                        <ul class="submenu">
-                            <li><a href="#xqueparaque">¿Por qué estamos aqui?</a></li>
-                        </ul>
+                        <a class="nav-link" href="#presentacion">Raíces</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#microacontesimientos">Microacontesimientos</a>
+                        <a class="nav-link" href="#xqueparaque">¿Por qué estamos aquí?</a>
+                        <ul class="submenu" style="margin-top: 10px;">
+                            <li><a href="#microacontesimientos">Microacontesimientos</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#team">Cocreador@s</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="entramados.html">Entramados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Creaciones</a>
+                        <a class="nav-link" href="creaciones.html">Creaciones</a>
                     </li>
                     <li class="nav-item last-item">
                         <a class="nav-link" href="#contacto">Redes</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
@@ -117,10 +103,12 @@
                     <div class="logos-uno">
                         <img src="assets/dibujo-3.webp" alt="" class="logo-dos">
                     </div>
-                    <h1>Multitudes agroecológicas</h1>
-                    <h2>Red urbana de Manizales</h2>
+                    <h1>Multitudes Agroecológicas</h1>
+                    <h2>Red Urbana de Manizales</h2>
                     <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio"
-                        style="background-color: #ffc800; border: 2px solid #ffc800;">Nuestros colectivos</a>
+                        style="background-color: #f0c52b; border: 2px solid #f0c52b; color: #000;">
+                        Nuestros Colectivos
+                    </a>
                 </div>
             </div>
         </div>
@@ -138,22 +126,9 @@
                 <div class="quienes-somos">
                     <p class="texto-huertas">
                         Somos una propuesta agroecológica que emerge del proyecto de extensión solidaria: “Jóvenes
-                        Sembrando Huertas Cosechando Comunidad” de la Universidad Nacional de Colombia sede
-                        Manizales en
-                        compañía de las organizaciones socioambientales de la ciudad.
-                        Este espacio es un pretexto para nuestro encuentro, vidas haciendo vidas, vidas sin miedo y
-                        con
-                        mucho amor nutriendo este estar juntos, cuerpo amado todo el tiempo y protegiendo siempre
-                        del
-                        despojo.
-                        En el co-disueño buscamos fortalecer la red de relaciones que se enraízan desde los diversos
-                        territorios, acompañamos prácticas de siembra, del cuidado de la tierra y de otras formas de
-                        vida posibles. Presentamos experiencias del trabajo vivo como algo común, un encuentro de
-                        lucha,
-                        resistencia y esperanza, de sentires compartidos en una multiplicidad de discursos y de
-                        autoorganización, con el deseo de seguir soñando, imaginando y creando formas de
-                        emancipación
-                        con acciones comunales, para transformar, sembrar y producir vida en rizomas expansivos.
+                        Sembrando Huertas Cosechando Comunidad” de la Universidad Nacional de Colombia- sede Manizales,
+                        que nace y crece en red desde el grupo de investigación académica “Cognición, Lenguaje y
+                        Cultura” en compañía de las siguientes alianzas y organizaciones socioambientales de la ciudad.
                     </p>
                 </div>
 
@@ -173,8 +148,6 @@
             <br><br><br>
             <div class="text-center">
                 <h2 class="section-heading text-uppercase texto-huertas-titulo">Colectivos</h2>
-                <h3 class="section-subheading text-muted">Colaboratorio de saberes y experiencias en agroecológia.
-                </h3>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
@@ -190,8 +163,8 @@
                             <img class="img-fluid" src="assets/comunativa.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">Huerta comunitaria
-                                comunativa
+                            <div class="portfolio-caption-heading texto-huertas-titulo">
+                                Huerta Comunitaria Comunativa
                             </div>
                         </div>
                     </div>
@@ -311,11 +284,24 @@
                             <img class="img-fluid" src="assets/img/naak/memoria-agua.png" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">Naak Memorias del agua</div>
+                            <div class="portfolio-caption-heading texto-huertas-titulo">Naak Memorias del Agua</div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container">
+                <div class="row text-center">
+                    <p class="texto-huertas">
+                        Este espacio es un pretexto para nuestro encuentro, vidas haciendo vidas, vidas sin miedo y
+                        con mucho amor nutriendo este estar juntos, cuerpo amado todo el tiempo y protegiendo
+                        siempre del despojo.Como multitudes agroecológicas buscamos fortalecer la red de relaciones
+                        que se enraizan desde los diversos territorios, acompañamos prácticas de siembra, del
+                        cuidado de la tierra y de otras formas de vida posibles.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
     </section>
@@ -323,7 +309,20 @@
     <section class="page-section bg-light">
         <div class="class-color2">
             <div class="container foto">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase texto-huertas-titulo">Raíces del Proyecto</h2>
+                    <p class="texto-huertas">
+                        En el marco de este proyecto se caminan los siguientes objetivos y fases:
+                    </p>
+                </div>
                 <img src="./assets/img/presentacion.jpg" alt="" id="presentacion">
+                <p class="texto-huertas" style="padding-top: 20px;">
+                    Estas raíces permitieron fortalecer las redes agroecológicas de la ciudad con experiencias del
+                    trabajo vivo como algo común, un encuentro de lucha, resistencia y esperanza, de sentires
+                    compartidos en una multiplicidad de discursos y de autoorganización, con el deseo de seguir soñando,
+                    imaginando y creando formas de emancipación y acciones comunales, para transformar, sembrar y
+                    producir vida en rizomas expansivos.
+                </p>
             </div>
         </div>
     </section>
@@ -331,23 +330,33 @@
     <section class="page-section bg-light" id="xqueparaque">
         <div class="class-color">
             <div class="container" style="width: 100%; align-items: center; text-align: center; ">
-                <h1 class="texto-huertas-titulo">¿Por qué y para qué estamos aqui?</h1>
+                <h1 class="texto-huertas-titulo">¿POR QUÉ Y PARA QUÉ ESTAMOS AQUÍ?</h1>
                 <div class="row" style="justify-content: space-around;">
+                    <p class="texto-huertas">
+                        Estamos aquí para apostarle a una formación alternativa que tuvo lugar en el Diplomado de
+                        Agroecología Urbana, donde se han puesto en conversación los principios de la educación popular,
+                        la
+                        agroecología como apuesta del cuidado de la vida, y las formas de resistencia a partir de la
+                        organización juvenil y comunitaria. Los encuentros han permitido reconocer el tejido comunitario
+                        de
+                        la ciudad, lo cual invita a pensar en las necesidades para una proyección sostenible,
+                        devolviendo
+                        palabra, reflexión y sentido a las apuestas comunitarias para su perdurabilidad en el tiempo.
+                    </p>
                     <div class="card" style="width: 40rem;">
                         <img src="./assets/img/jornadas/imagen_card.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="texto-huertas">
-                                Este espacio ha sido creado con el fin de enseñarle a todos los ciudadanos del mundo
-                                sobre
-                                el trabajo que hemos estado llevando a cabo desde la Universidad Nacional de Colombia
-                                sede
-                                Manizales en junta de los diferentes colectivos agroecológicos y de resistencia
-                                ambiental
-                                que hay en la ciudad y sus alrededores.
-                                Es un placer mostrarles por medio de imágenes propias esta hermosa labor que hemos
-                                sembrado
-                                todos los aquí presentes, dirigido a ustedes los próximos quienes darán una continuidad
-                                ojala infinita a la construcción social y ambiental en nuestros territorios.
+                                Este espacio cuenta sobre el trabajo que hemos estado llevando a cabo desde la
+                                Universidad
+                                Nacional de Colombia sede Manizales en junta de los diferentes colectivos agroecológicos
+                                y
+                                de resistencia ambiental que hay en la ciudad y sus alrededores. Es un placer mostrarles
+                                por
+                                medio de imágenes propias esta hermosa labor que hemos sembrado todos los aquí
+                                presentes,
+                                dirigido a ustedes los próximos quienes darán una continuidad ojala infinita a la
+                                construcción social y ambiental en nuestros territorios.
                             </p>
                         </div>
                     </div>
@@ -380,7 +389,7 @@
                             <img class="img-fluid" src="assets/img/jornadas/jornada_1/imagen1.jpg" alt="..." />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">JORNADA UNO</div>
+                            <div class="portfolio-caption-heading texto-huertas-titulo">RE TEJIENDO LA COMUNA</div>
                         </div>
                     </div>
                 </div>
@@ -397,7 +406,7 @@
                                 width="50" />
                         </a>
                         <div class="portfolio-caption">
-                            <div class="portfolio-caption-heading texto-huertas-titulo">JORNADA DOS</div>
+                            <div class="portfolio-caption-heading texto-huertas-titulo">RECORRIDOS</div>
                         </div>
                     </div>
                 </div>
@@ -487,6 +496,24 @@
                     </div>
                 </div>
 
+                <!-- Completar informacion -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#guarderia">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/jornadas/guarderia/img2.jpg" alt="..." width="50" />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading texto-huertas-titulo">CREACIÓN DEL SEMILLERO</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -572,12 +599,10 @@
                                 <h3>Re tejiendo San José</h3>
                                 <p style="text-align: left;">
                                     Se reconoció el territorio de trabajo en el sector San José de la ciudad de
-                                    Manizales,
-                                    donde esta ubicada la fundación Comunativa, seguido a esto se hizo inicio a la Minga
-                                    y se
-                                    conformaron las tulpas, según las habilidades de los participantes y las
-                                    expectativas que
-                                    será guiado por un guardián
+                                    Manizales, donde esta ubicada la fundación Comunativa, seguido a esto se hizo inicio
+                                    a la Minga
+                                    y se conformaron las tulpas, según las habilidades de los participantes y las
+                                    expectativas que será guiado por un guardián
                                 </p>
                                 <ol style="text-align: left;">
                                     <li>
@@ -665,7 +690,6 @@
                                         Cerrar
                                     </button>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -683,8 +707,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="modal-body texto-huertas">
-
-                                <h3><strong>Lugar: </strong> Auditorio Jardín Botánico</h3>
+                                <h3><strong>Lugar: </strong>Auditorio Jardín Botánico</h3>
                                 <h4>Horizonte de sentido general del módulo </h4>
                                 <p>
                                     Ofrecer elementos teóricos, conceptuales, metodológicos y técnicos para el
@@ -1341,7 +1364,8 @@
 
                     <div class="col-lg-6">
                         <div class="team-member">
-                            <img class="mx-auto img-cuadrada" src="assets/img/perfiles/" alt="..." />
+                            <img class="mx-auto img-cuadrada" src="assets/img/perfiles/Santiago_Castrillón.jpeg"
+                                alt="..." />
                             <h4 class="texto-cocre">SANTIAGO CASTRILLÓN</h4>
                             <p class="texto-huertas">
                                 Guardián de la vida y el territorio vivo, ser humano sintiente y atento a la lectura
@@ -1448,7 +1472,7 @@
                     <ul class="list-inline  footer-class" style="text-align: start;">
                         <li><a href="#quienessomos" type="button" class="footer-class">¿Quiénes somos?</a></li>
                         <li><a href="#portfolio" type="button" class="footer-class">Colectivos</a></li>
-                        <li><a href="#presentacion" type="button" class="footer-class">Raices</a></li>
+                        <li><a href="#presentacion" type="button" class="footer-class">Raíces</a></li>
                         <li><a href="#xqueparaque" type="button" class="footer-class">¿Por qué estamos aqui?</a></li>
                         <li><a href="#microacontesimientos" type="button" class="footer-class">Microacontesimientos</a>
                         </li>
@@ -1720,24 +1744,25 @@
                         <div class="col-lg-8">
                             <div class="modal-body">
                                 <!-- Project details-->
-                                <h2 class="text-uppercase">Sembrando vida en la Unal</h2>
+                                <h2 class="text-uppercase">Sembrando Vida en la Unal</h2>
                                 <img class="img-fluid d-block mx-auto" src="assets/mural.webp" alt="..." />
                                 <p class="texto-huertas">
-                                    La propuesta para la creación de las Huertas UNAL, se creó con el objetivo de
-                                    fortalecer las iniciativas agroecológicas del proyecto “Jóvenes Sembrando Huertas
-                                    Cosechando Comunidad” en articulación con las formas de organización de trabajo en
-                                    la Residencia Rómulo German Carvalho Universidad Nacional de Colombia- Sede
-                                    Manizales. Por esta razón, fue indispensable contar con la participación y el
-                                    interés de los residentes en los alojamientos y demás estudiantes
-                                    foráneos de Antioquia, Caldas, Nariño, Putumayo, Amazonas y otros lugares, quienes
-                                    inicialmente conformaron el semillero “Sembrando Vida en la UNAL” buscamos crear
-                                    espacios de siembra y compartir de saberes.
+                                    Desde la siembra de intenciones para fortalecer el tejido conectivo en las huertas y
+                                    acompañar los procesos agroecológicos en la ciudad, nace el semillero “Sembrando
+                                    vida Unal” del campus Palogrande, en el cual buscamos fortalecer las diversas
+                                    prácticas de cuidado, para sostener la vida en comunidad y armonía con la tierra.
                                 </p>
-                                <h3>Contactanos</h3>
+                                <h3>Contáctanos</h3>
                                 <ul class="list-inline" style="text-align: start;">
                                     <li>
                                         <strong>Correo electronico:</strong>
                                         jovenessembrandohuertas@gmail.com
+                                    </li>
+                                    <li>
+                                        <strong>
+
+                                        </strong>
+                                        Únete al grupo de Wpp: https://chat.whatsapp.com/C3J6UDoAgjaJs94i69Vb75
                                     </li>
                                     <li>
                                         <strong>Encuentranos en:</strong>
