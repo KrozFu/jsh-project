@@ -104,23 +104,21 @@ crearCarrusel('carouselExampleIndicators2', 'carouselInner2', rutaCarpeta2, imag
 /* Carousel 3 */
 const rutaCarpeta3 = 'assets/img/jornadas/jornada_2/mas_img/';
 const imagenesCarrusel3 = [
-    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
-    'img6.jpg',
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.JPG', 'img7.JPG', 'img8.jpg', 'img9.jpg', 'img10.jpg', 'img11.jpg', 'img12.jpg', 'img13.jpg', 'img14.jpg'
 ];
 crearCarrusel('carouselExampleIndicators3', 'carouselInner3', rutaCarpeta3, imagenesCarrusel3);
-
 
 /* Carousel 4 */
 const rutaCarpeta4 = 'assets/img/jornadas/resistencias/';
 const imagenesCarrusel4 = [
-    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg',
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.JPG', 'img6.JPG', 'img7.JPG', 'img8.jpg'
 ];
 crearCarrusel('carouselExampleIndicators4', 'carouselInner4', rutaCarpeta4, imagenesCarrusel4);
 
 /* Carousel 5 */
 const rutaCarpeta5 = 'assets/img/jornadas/semillas/';
 const imagenesCarrusel5 = [
-    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg','img5.jpg','img6.jpg',
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg', 'img6.jpg',
 ];
 crearCarrusel('carouselExampleIndicators5', 'carouselInner5', rutaCarpeta5, imagenesCarrusel5);
 
@@ -134,6 +132,6 @@ crearCarrusel('carouselExampleIndicators6', 'carouselInner6', rutaCarpeta6, imag
 /* Carousel 7 */
 const rutaCarpeta7 = 'assets/img/jornadas/guarderia/';
 const imagenesCarrusel7 = [
-    'img1.jpg', 'img2.jpg', 'img3.jpg','img4.jpg','img5.jpg',
+    'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
 ];
 crearCarrusel('carouselExampleIndicators7', 'carouselInner7', rutaCarpeta7, imagenesCarrusel7);
