@@ -12901,8 +12901,8 @@ header.masthead::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/jsh/huertas.jpg");
-  /* background-image: url("/huertas.jpg"); */
+  /* background-image: url("/jsh/huertas.jpg"); */
+  background-image: url("/huertas.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
